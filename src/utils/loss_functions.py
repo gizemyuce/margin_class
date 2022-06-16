@@ -20,6 +20,7 @@ class PolynomialLoss(nn.Module):
         self.type = type
         assert type in self.allowed_types
         self.alpha = float(alpha)
+        self.beta = float(beta)
         assert reduction == "none"
 
     def margin_fn(self, margin_vals: torch.Tensor):
@@ -59,6 +60,7 @@ class MCPolynomialLoss_max(nn.Module):
         self.type = type
         assert type in self.allowed_types
         self.alpha = float(alpha)
+        self.beta = float(beta)
         assert reduction == "none"
 
     def margin_fn(self, margin_vals: torch.Tensor):
@@ -104,6 +106,7 @@ class MCPolynomialLoss_sum(nn.Module):
         self.type = type
         assert type in self.allowed_types
         self.alpha = float(alpha)
+        self.beta = float(beta)
         assert reduction == "none"
 
     def margin_fn(self, margin_vals: torch.Tensor):
