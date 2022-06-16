@@ -82,11 +82,11 @@ def main():
   if config.loss_type == 'ce':
     criterion = nn.CrossEntropyLoss(reduction="none")
   elif config.loss_type == 'poly':
-    criterion = PolynomialLoss(type="logit", alpha=alpha)
+    criterion = PolynomialLoss(type="logit", alpha=config.alpha, beta=config.beta)
   elif config.loss_type == 'poly-max':
-    criterion = MCPolynomialLoss_max(type="logit", alpha=alpha)
+    criterion = MCPolynomialLoss_max(type="logit", alpha=config.alpha, beta=config.beta)
   elif config.loss_type == 'poly-sum':
-    criterion = MCPolynomialLoss_sum(type="logit", alpha=alpha)
+    criterion = MCPolynomialLoss_sum(type="logit", alpha=config.alpha, beta=config.beta)
 
   if config.architecture == 'CNN':
     model = CNNModel()
