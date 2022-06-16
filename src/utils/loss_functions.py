@@ -62,10 +62,10 @@ class MCPolynomialLoss_max(nn.Module):
         assert reduction == "none"
 
     def margin_fn(self, margin_vals: torch.Tensor):
-        indicator = margin_vals <= 1
+        indicator = margin_vals <= self.beta
         inv_part = torch.pow((margin_vals-(self.beta-1)).abs(),-1*self.alpha)  # prevent exponentiating negative numbers by fractional powers
         if self.type == "logit":
-            indicator = margin_vals <= 1
+            indicator = margin_vals <= self.beta
             inv_part = torch.pow((margin_vals-(self.beta-1)).abs(),-1*self.alpha)
             logit_inner = -1 * margin_vals
             logit_part = torch.nn.functional.softplus(logit_inner)/(math.log(1+math.exp(-1)))
@@ -107,10 +107,10 @@ class MCPolynomialLoss_sum(nn.Module):
         assert reduction == "none"
 
     def margin_fn(self, margin_vals: torch.Tensor):
-        indicator = margin_vals <= 1
+        indicator = margin_vals <= self.beta
         inv_part = torch.pow((margin_vals-(self.beta-1)).abs(),-1*self.alpha)  # prevent exponentiating negative numbers by fractional powers
         if self.type == "logit":
-            indicator = margin_vals <= 1
+            indicator = margin_vals <= self.beta
             inv_part = torch.pow((margin_vals-(self.beta-1)).abs(),-1*self.alpha)
             logit_inner = -1 * margin_vals
             logit_part = torch.nn.functional.softplus(logit_inner)/(math.log(1+math.exp(-1)))
