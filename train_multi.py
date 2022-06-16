@@ -34,9 +34,9 @@ import os
 import numpy as np
 
 from src.utils.loss_functions import *
-from architectures.CNN import CNNModel
-from architectures.Convnet import ConvNet
-from architectures.Resnet import ResNetMulti
+from src.architectures.CNN import CNNModel
+from src.architectures.Convnet import ConvNet
+from src.architectures.Resnet import ResNetMulti
 from src.data_models.FMnist_loaders import get_fmnist_loaders_3channels
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
