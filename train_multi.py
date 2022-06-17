@@ -103,7 +103,7 @@ def main():
   
   optimizer = torch.optim.SGD(model.parameters(), lr=config.learning_rate, momentum=config.momentum, weight_decay=config.weight_decay)
   
-  scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=100, gamma=0.1, last_epoch=- 1, verbose=False)
+  #scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=100, gamma=0.1, last_epoch=- 1, verbose=False)
 
   iter=0
   for epoch in range(config['epochs']):
@@ -142,7 +142,7 @@ def main():
 
         iter += 1
 
-    scheduler.step()
+    #scheduler.step()
     train_accuracy = sum(train_acc)/config.n
 
     # Calculate Val Accuracy
