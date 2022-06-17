@@ -1,13 +1,18 @@
 import torch
 import torch.nn as nn
 import numpy as np
+import random 
 
 import torchvision.datasets as datasets
 from torchvision import transforms
 
 
 
-def get_fmnist_loaders_3channels(n_train, n_val=10000, batch_size_train=None, batch_size=128):
+def get_fmnist_loaders_3channels(n_train, n_val=10000, batch_size_train=None, batch_size=128, seed=torch.seed):
+
+  torch.manual_seed(seed)
+  random.seed(seed)
+  np.random.seed(seed)
   
   if batch_size_train == None:
     batch_size_train = n_train

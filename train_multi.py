@@ -77,7 +77,7 @@ def main():
         "Bag",
         "Boot"]
 
-  train_loader, val_loader, test_loader = get_fmnist_loaders_3channels(config.n, batch_size_train=None, batch_size=128)
+  train_loader, val_loader, test_loader = get_fmnist_loaders_3channels(config.n, batch_size_train=None, batch_size=128, seed=seed)
 
   if config.loss_type == 'ce':
     criterion = nn.CrossEntropyLoss(reduction="none")
