@@ -1,0 +1,57 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.17
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.10.4
+    start_time: 1655477643
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      3:
+      - 1
+      - 16
+      4: 3.10.4
+      5: 0.12.17
+      8:
+      - 3
+      - 5
+alpha:
+  desc: null
+  value: 1
+architecture:
+  desc: null
+  value: ResNet
+beta:
+  desc: null
+  value: 1000
+dataset:
+  desc: null
+  value: FashionMNIST
+epochs:
+  desc: null
+  value: 1000
+learning_rate:
+  desc: null
+  value: 0.1
+loss_type:
+  desc: null
+  value: poly-max
+momentum:
+  desc: null
+  value: 0.9
+n:
+  desc: null
+  value: 256
+seed:
+  desc: null
+  value: 0
+weight_decay:
+  desc: null
+  value: 0

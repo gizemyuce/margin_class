@@ -42,17 +42,17 @@ from src.data_models.FMnist_loaders import get_fmnist_loaders_3channels
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 hyperparameter_defaults = dict(
-    learning_rate = 0.001,
+    learning_rate = 0.1,
     epochs = 1000,
-    n=128,
+    n=256,
     loss_type= 'poly-max',                #'ce',
     dataset = 'FashionMNIST',
     architecture = 'ResNet',
     seed = 0,
     momentum=0.9,
     weight_decay=0,
-    beta = 1000,
-    alpha=1,
+    beta = 1000.,
+    alpha=1.,
     )
 
 wandb.init(config=hyperparameter_defaults, project="fmnist_multi")

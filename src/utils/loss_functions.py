@@ -30,6 +30,7 @@ class PolynomialLoss(nn.Module):
         )  # prevent exponentiating negative numbers by fractional powers
         if self.type == "logit":
             indicator = margin_vals <= self.beta
+            print(indicator)
             inv_part = torch.pow((margin_vals-(self.beta-1)).abs(),-1*self.alpha)
             logit_inner = -1 * margin_vals
             logit_part = torch.nn.functional.softplus(logit_inner)/(math.log(1+math.exp(-1)))
@@ -63,14 +64,18 @@ class MCPolynomialLoss_max(nn.Module):
         self.beta = float(beta)
         assert reduction == "none"
 
-    def margin_fn(self, margin_vals: torch.Tensor):
+    def margin_fn(self, margin_vals: torch.Tensor, logits:torch.Tensor, target:torch.Tensor):
         indicator = margin_vals <= self.beta
         inv_part = torch.pow((margin_vals-(self.beta-1)).abs(),-1*self.alpha)  # prevent exponentiating negative numbers by fractional powers
         if self.type == "logit":
             indicator = margin_vals <= self.beta
+            #print(torch.mean(margin_vals), torch.min(margin_vals), torch.max(margin_vals))
+            #print(indicator)
+            #print(self.beta)
             inv_part = torch.pow((margin_vals-(self.beta-1)).abs(),-1*self.alpha)
             logit_inner = -1 * margin_vals
-            logit_part = torch.nn.functional.softplus(logit_inner)/(math.log(1+math.exp(-1)))
+            #logit_part = torch.nn.functional.softplus(logit_inner)/(math.log(1+math.exp(-1)))
+            logit_part = torch.nn.functional.cross_entropy(logits, target)
             scores = logit_part * indicator + inv_part * (~indicator)
             return scores
 
@@ -85,7 +90,7 @@ class MCPolynomialLoss_max(nn.Module):
 
         margin_scores = logits[range(target.shape[0]), target] - torch.max(tmp_logits, dim=1).values
         #margin_scores = logits[:, target]/torch.sum(logits, dim=1)
-        loss_values = self.margin_fn(margin_scores)
+        loss_values = self.margin_fn(margin_scores, logits, target)
         return loss_values
 
 class MCPolynomialLoss_sum(nn.Module):

@@ -1,0 +1,73 @@
+tensor(-1.0708, grad_fn=<MeanBackward0>) tensor(-5.0890, grad_fn=<MinBackward1>) tensor(1.0617, grad_fn=<MaxBackward1>)
+tensor([True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True])
+1000.0
+Epoch: 0 Loss: 4.5543 Train_Acc: 0.0820 Val_Accuracy: 0.1502
+tensor(-9.4550, grad_fn=<MeanBackward0>) tensor(-67.0734, grad_fn=<MinBackward1>) tensor(5.4387, grad_fn=<MaxBackward1>)
+tensor([True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True, True, True, True, True, True, True, True, True,
+        True, True, True, True])
+1000.0
+Traceback (most recent call last):
+  File "C:\Users\gizem\Documents\GitHub\margin_class\train_multi.py", line 187, in <module>
+    main()
+  File "C:\Users\gizem\Documents\GitHub\margin_class\train_multi.py", line 157, in main
+    outputs = model(images)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\gizem\Documents\GitHub\margin_class\src\architectures\Resnet.py", line 25, in forward
+    x = self.layer2(x)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\container.py", line 141, in forward
+    input = module(input)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torchvision\models\resnet.py", line 94, in forward
+    out = self.conv2(out)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\conv.py", line 443, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+KeyboardInterrupt
