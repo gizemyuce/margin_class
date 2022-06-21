@@ -53,6 +53,7 @@ hyperparameter_defaults = dict(
     weight_decay=0,
     beta = 1000.,
     alpha=1.,
+    test=False,
     )
 
 wandb.init(config=hyperparameter_defaults, project="fmnist_multi")
@@ -153,8 +154,13 @@ def main():
     total = 0.0
     total_arr = [0.0] * 10
 
+    if config.test:
+      loader=test_loader
+    else:
+      loader=val_loader
+
     # Iterate through test dataset
-    for images, labels in val_loader:
+    for images, labels in loader:
         images = Variable(images)
         images= images.to(device)
         labels = Variable(labels).to(device)
