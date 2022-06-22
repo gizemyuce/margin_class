@@ -32,7 +32,7 @@ import wandb
 import os
 import numpy as np
 
-from src.data_models.FMnist_loaders import get_binary_fmnist_loaders_01, get_binary_fmnist_loaders_24
+from src.data_models.FMnist_loaders import get_binary_fmnist_loaders_01, get_binary_fmnist_loaders_24, get_binary_fmnist_loaders_24_3channels
 from src.utils.loss_functions import PolynomialLoss
 from src.architectures.Resnet import ResNetBinary
 from src.architectures.Convnet import ConvNet_binary
@@ -78,12 +78,13 @@ def main():
         "Boot"]
 
   if config.dataset == 'FashionMNIST-binary01':
-    train_loader, val_loader, test_loader = get_binary_fmnist_loaders_01(config.n, batch_size_train=None, batch_size=128)
+    train_loader, val_loader, test_loader = get_binary_fmnist_loaders_01(config.n, batch_size_train=None, batch_size=128, seed=config.seed)
   elif config.dataset == 'FashionMNIST-binary24':
-    train_loader, val_loader, test_loader = get_binary_fmnist_loaders_24(config.n, batch_size_train=None, batch_size=128)
+    if config.architecture == 'Resnet':
+      train_loader, val_loader, test_loader = get_binary_fmnist_loaders_24_3channels(config.n, batch_size_train=None, batch_size=128, seed=config.seed)
+    else:
+      train_loader, val_loader, test_loader = get_binary_fmnist_loaders_24(config.n, batch_size_train=None, batch_size=128, seed=config.seed)
 
-
-  
 
   if config.loss_type == 'ce':
     criterion = nn.CrossEntropyLoss(reduction="none")
@@ -94,6 +95,8 @@ def main():
     model = CNNModel_binary()
   elif config.architecture == 'Convnet':
     model = ConvNet_binary()
+  elif config.architecture == 'Resnet':
+    model = ResNetBinary()
     
   model = model.to(device) 
 
