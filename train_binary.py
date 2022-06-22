@@ -52,6 +52,9 @@ hyperparameter_defaults = dict(
     momentum=0.9,
     weight_decay=0,
     test=True,
+    left_loss='exp',
+    alpha=1,
+    beta=1,
     )
 
 
@@ -89,7 +92,7 @@ def main():
   if config.loss_type == 'ce':
     criterion = nn.CrossEntropyLoss(reduction="none")
   elif config.loss_type == 'poly':
-    criterion = PolynomialLoss(type="logit", alpha=alpha)
+    criterion = PolynomialLoss(type=config.left_loss, alpha=config.alpha, beta=config.beta)
 
   if config.architecture == 'CNN':
     model = CNNModel_binary()
