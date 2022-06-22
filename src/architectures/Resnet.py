@@ -33,7 +33,7 @@ class ResNetMulti(nn.Module):
 
 class ResNetBinary(nn.Module):
     def __init__(self, pretrained = False):
-        super(ResNetMulti, self).__init__()
+        super(ResNetBinary, self).__init__()
         model_resnet18 = models.resnet18(pretrained=pretrained)
         self.conv1 = model_resnet18.conv1
         self.bn1 = model_resnet18.bn1
