@@ -83,7 +83,7 @@ def main():
   if config.dataset == 'FashionMNIST-binary01':
     train_loader, val_loader, test_loader = get_binary_fmnist_loaders_01(config.n, batch_size_train=None, batch_size=128, seed=config.seed)
   elif config.dataset == 'FashionMNIST-binary24':
-    if config.architecture == 'Resnet':
+    if config.architecture == 'ResNet':
       train_loader, val_loader, test_loader = get_binary_fmnist_loaders_24_3channels(config.n, batch_size_train=None, batch_size=128, seed=config.seed)
     else:
       train_loader, val_loader, test_loader = get_binary_fmnist_loaders_24(config.n, batch_size_train=None, batch_size=128, seed=config.seed)
@@ -98,7 +98,7 @@ def main():
     model = CNNModel_binary()
   elif config.architecture == 'Convnet':
     model = ConvNet_binary()
-  elif config.architecture == 'Resnet':
+  elif config.architecture == 'ResNet':
     model = ResNetBinary()
     
   model = model.to(device) 
