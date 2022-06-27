@@ -5,7 +5,10 @@ import seaborn as sns
 sns.set_palette("muted")
 import matplotlib.pyplot as plt
 
-def create_data_sparse(p,n1,n2,n_test, s=1, random_flip_prob=0):
+def create_data_sparse(p,n1,n2,n_test, s=1, random_flip_prob=0, seed=0):
+
+    np.random.seed(seed)
+    torch.manual_seed(seed)
     
     # generating ground truth 
     w_gt = torch.zeros(p)

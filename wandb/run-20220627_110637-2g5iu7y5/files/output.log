@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "c:\Users\gizem\Documents\GitHub\margin_class\margin_class_perf.py", line 454, in <module>
+    main()
+  File "c:\Users\gizem\Documents\GitHub\margin_class\margin_class_perf.py", line 72, in main
+    xs, ys, x_seq_test, y_seq_test, z1s, z2s = create_data_sparse(config.n_features,n1,n2,config.n_test, s=config.s, random_flip_prob=config.label_noise_prob, seed=config.seed)
+TypeError: create_data_sparse() got an unexpected keyword argument 'seed'

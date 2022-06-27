@@ -1,6 +1,7 @@
 import cvxpy as cp
 import numpy as np
 
+from typing import Union
 
 def solve_svc_problem(
     x: np.ndarray, y: np.ndarray, p: float = 1.0, solver: Union[None, str] = "MOSEK"

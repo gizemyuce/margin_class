@@ -2,7 +2,8 @@ import cvxpy as cp
 import numpy as np
 import torch
 
-from svc import solve_svc_problem
+#from svc import solve_svc_problem
+from src.margin_estimators.svc import *
 
 def l2_average_interp(z1s, z2s):
     d = z1s.size(dim=1)
@@ -76,12 +77,12 @@ def l1_average_interp(z1s, z2s, linear_program=True):
     w=torch.from_numpy(w).float()
     return w
 
-def l2_min_margin():
+def l2_min_margin(xs, ys):
     _,_, wmm = solve_svc_problem(xs, ys, p=2) 
     wmm = torch.Tensor(wmm.value)
     return wmm
 
-def l1_min_margin():
+def l1_min_margin(xs, ys):
     _,_,wmm = solve_svc_problem(xs, ys, p=1)
     wmm = torch.Tensor(wmm.value)
     return wmm
