@@ -11,6 +11,9 @@ def l2_average_interp(z1s, z2s):
     z_seq = torch.cat((z1s, z2s), dim=0)
     z_mean = torch.mean(z_seq, dim=0)
 
+    d = z_seq.size(dim=1)
+    n = z_seq.size(dim=0)
+
     x = cp.Variable(d)
     objective = cp.Minimize(-z_mean @ x)
     constraints = [cp.norm(x,p=2) <= 1,-z_seq @ x <= torch.zeros(n)-1e-5]

@@ -1,0 +1,60 @@
+wandb_version: 1
+
+SNR:
+  desc: null
+  value: 3
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.17
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.10.4
+    start_time: 1656330785
+    t:
+      1:
+      - 1
+      - 5
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 53
+      - 55
+      3:
+      - 16
+      - 19
+      4: 3.10.4
+      5: 0.12.17
+      8:
+      - 3
+      - 5
+data_mixture:
+  desc: null
+  value: false
+estimator_type:
+  desc: null
+  value: l2-avg-intp
+label_noise_prob:
+  desc: null
+  value: 0
+n_features:
+  desc: null
+  value: 5000
+n_test:
+  desc: null
+  value: 10000
+n_train:
+  desc: null
+  value: 100
+s:
+  desc: null
+  value: 1
+seed:
+  desc: null
+  value: 0
+tau:
+  desc: null
+  value: 1.0

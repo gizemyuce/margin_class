@@ -43,7 +43,7 @@ hyperparameter_defaults = dict(
     label_noise_prob= 0,
     data_mixture = False,
     seed = 0,
-    estimator_type = 'l1-avg-cf',
+    estimator_type = 'l2-avg-intp',
     )
 
 wandb.init(config=hyperparameter_defaults, project="margin_classifiers")
