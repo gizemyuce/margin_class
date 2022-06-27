@@ -56,8 +56,10 @@ np.random.seed(config.seed)
 
 def main():
 
+    config.n_train = int(config.n_train)
+
     n1 = min(int(np.round(config.tau * config.n_train/(1.+config.tau))), int(config.n_train)-1)
-    n2 = config.n_train - n1
+    n2 = int(config.n_train) - n1
     n1, n2 = max(n1, n2), min(n1, n2)
 
     tau = n1/n2
