@@ -31,7 +31,7 @@ def l2_average_interp(z1s, z2s):
     w=x.value
     w=torch.from_numpy(w).float()
 
-    return w
+    return w/torch.norm(w)
 
 def l1_average_interp(z1s, z2s, linear_program=True):
     
@@ -78,14 +78,14 @@ def l1_average_interp(z1s, z2s, linear_program=True):
         w=x.value
     
     w=torch.from_numpy(w).float()
-    return w
+    return w/torch.norm(w)
 
 def l2_min_margin(xs, ys):
     _,_, wmm = solve_svc_problem(xs, ys, p=2) 
     wmm = torch.Tensor(wmm.value)
-    return wmm
+    return wmm/torch.norm(wmm)
 
 def l1_min_margin(xs, ys):
     _,_,wmm = solve_svc_problem(xs, ys, p=1)
     wmm = torch.Tensor(wmm.value)
-    return wmm
+    return wmm/torch.norm(wmm)
