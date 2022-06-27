@@ -15,7 +15,7 @@ def create_data_sparse(p,n1,n2,n_test, s=1, random_flip_prob=0, seed=0):
     w_gt[0:s] = 1/(s ** 0.5)
 
     # uniformly sampling points and labels
-    xs = torch.randn((2*(n1+n2), p))
+    xs = torch.randn((int(2*(n1+n2)), int(p)))
     ys_noiseless = torch.sign(xs @ w_gt)
     # xs = xs.numpy()
     # ys_noiseless = ys_noiseless.numpy()
