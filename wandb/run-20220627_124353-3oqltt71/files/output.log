@@ -1,0 +1,13 @@
+wandb: ERROR Attempted to change value of key "n_train" from 100.7 to 100
+wandb: ERROR If you really want to do this, pass allow_val_change=True to config.update()
+Traceback (most recent call last):
+  File "c:\Users\gizem\Documents\GitHub\margin_class\margin_class_perf.py", line 459, in <module>
+    main()
+  File "c:\Users\gizem\Documents\GitHub\margin_class\margin_class_perf.py", line 59, in main
+    config.n_train = int(config.n_train)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\wandb\sdk\wandb_config.py", line 148, in __setitem__
+    key, val = self._sanitize(key, val)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\wandb\sdk\wandb_config.py", line 251, in _sanitize
+    raise config_util.ConfigError(
+wandb.sdk.lib.config_util.ConfigError: Attempted to change value of key "n_train" from 100.7 to 100
+If you really want to do this, pass allow_val_change=True to config.update()
