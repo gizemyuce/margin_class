@@ -460,3 +460,87 @@ Epoch: 435 Loss: 0.0486 Train_Acc: 1.0000 Val_Accuracy: 0.7450
 Epoch: 436 Loss: 0.0486 Train_Acc: 1.0000 Val_Accuracy: 0.7450
 Epoch: 437 Loss: 0.0485 Train_Acc: 1.0000 Val_Accuracy: 0.7450
 Epoch: 438 Loss: 0.0485 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 439 Loss: 0.0484 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 440 Loss: 0.0484 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+wandb: 429 encountered (Filestream rate limit exceeded, retrying in 2.2156556851133944 seconds), retrying request
+wandb: 429 encountered (Filestream rate limit exceeded, retrying in 4.902445953702223 seconds), retrying request
+Epoch: 441 Loss: 0.0484 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+wandb: 429 encountered (Filestream rate limit exceeded, retrying in 9.038082175535513 seconds), retrying request
+Epoch: 442 Loss: 0.0483 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 443 Loss: 0.0483 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 444 Loss: 0.0482 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 445 Loss: 0.0482 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 446 Loss: 0.0482 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 447 Loss: 0.0481 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 448 Loss: 0.0481 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 449 Loss: 0.0480 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 450 Loss: 0.0480 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 451 Loss: 0.0480 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 452 Loss: 0.0479 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 453 Loss: 0.0479 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 454 Loss: 0.0478 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 455 Loss: 0.0478 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 456 Loss: 0.0478 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 457 Loss: 0.0477 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 458 Loss: 0.0477 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 459 Loss: 0.0476 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 460 Loss: 0.0476 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 461 Loss: 0.0476 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 462 Loss: 0.0475 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 463 Loss: 0.0475 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 464 Loss: 0.0474 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 465 Loss: 0.0474 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 466 Loss: 0.0474 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 467 Loss: 0.0473 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 468 Loss: 0.0473 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 469 Loss: 0.0472 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 470 Loss: 0.0472 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 471 Loss: 0.0472 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 472 Loss: 0.0471 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 473 Loss: 0.0471 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+wandb: 429 encountered (Filestream rate limit exceeded, retrying in 2.2260677861760607 seconds), retrying request
+wandb: 429 encountered (Filestream rate limit exceeded, retrying in 4.975562819915587 seconds), retrying request
+Epoch: 474 Loss: 0.0471 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 475 Loss: 0.0470 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 476 Loss: 0.0470 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 477 Loss: 0.0469 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 478 Loss: 0.0469 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 479 Loss: 0.0469 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 480 Loss: 0.0468 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 481 Loss: 0.0468 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 482 Loss: 0.0468 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 483 Loss: 0.0467 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+wandb: 429 encountered (Filestream rate limit exceeded, retrying in 2.1549468358381736 seconds), retrying request
+wandb: 429 encountered (Filestream rate limit exceeded, retrying in 4.492725968184678 seconds), retrying request
+Epoch: 484 Loss: 0.0467 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 485 Loss: 0.0466 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 486 Loss: 0.0466 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 487 Loss: 0.0466 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 488 Loss: 0.0465 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 489 Loss: 0.0465 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 490 Loss: 0.0465 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 491 Loss: 0.0464 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 492 Loss: 0.0464 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+wandb: 429 encountered (Filestream rate limit exceeded, retrying in 2.267820875827861 seconds), retrying request
+wandb: 429 encountered (Filestream rate limit exceeded, retrying in 4.661927063012766 seconds), retrying request
+Epoch: 493 Loss: 0.0464 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 494 Loss: 0.0463 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 495 Loss: 0.0463 Train_Acc: 1.0000 Val_Accuracy: 0.7435
+Epoch: 496 Loss: 0.0463 Train_Acc: 1.0000 Val_Accuracy: 0.7435
+Epoch: 497 Loss: 0.0462 Train_Acc: 1.0000 Val_Accuracy: 0.7435
+Epoch: 498 Loss: 0.0462 Train_Acc: 1.0000 Val_Accuracy: 0.7435
+Epoch: 499 Loss: 0.0461 Train_Acc: 1.0000 Val_Accuracy: 0.7435
+Epoch: 500 Loss: 0.0461 Train_Acc: 1.0000 Val_Accuracy: 0.7435
+wandb: 429 encountered (Filestream rate limit exceeded, retrying in 2.467703910577578 seconds), retrying request
+wandb: 429 encountered (Filestream rate limit exceeded, retrying in 4.573260922228672 seconds), retrying request
+Epoch: 501 Loss: 0.0461 Train_Acc: 1.0000 Val_Accuracy: 0.7435
+Epoch: 502 Loss: 0.0460 Train_Acc: 1.0000 Val_Accuracy: 0.7435
+Epoch: 503 Loss: 0.0460 Train_Acc: 1.0000 Val_Accuracy: 0.7435
+Epoch: 504 Loss: 0.0460 Train_Acc: 1.0000 Val_Accuracy: 0.7435
+Epoch: 505 Loss: 0.0459 Train_Acc: 1.0000 Val_Accuracy: 0.7435
+Epoch: 506 Loss: 0.0459 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 507 Loss: 0.0459 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 508 Loss: 0.0458 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 509 Loss: 0.0458 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 510 Loss: 0.0458 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 511 Loss: 0.0457 Train_Acc: 1.0000 Val_Accuracy: 0.7440
