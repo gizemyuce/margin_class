@@ -1,0 +1,24 @@
+{
+    "os": "Windows-10-10.0.25126-SP0",
+    "python": "3.10.4",
+    "heartbeatAt": "2022-06-29T09:05:04.606972",
+    "startedAt": "2022-06-29T09:04:59.970987",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1650 with Max-Q Design",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "c:\\Users\\gizem\\Documents\\GitHub\\margin_class\\train_binary.py",
+    "codePath": "train_binary.py",
+    "git": {
+        "remote": "https://github.com/gizemyuce/margin_class.git",
+        "commit": "99af25baba642dc64c7dcdc92aefb58441047e8d"
+    },
+    "email": "gizemyucee@gmail.com",
+    "root": "C:/Users/gizem/Documents/GitHub/margin_class",
+    "host": "MSI",
+    "username": "gizem",
+    "executable": "C:\\Users\\gizem\\anaconda3\\envs\\soccer2\\python.exe"
+}

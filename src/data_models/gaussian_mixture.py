@@ -5,8 +5,11 @@ import seaborn as sns
 sns.set_palette("muted")
 import matplotlib.pyplot as plt
 
-def create_data_mixture(p,n1,n2,n_test, s=1, random_flip_prob=0, SNR=10, outlier=True, outlier_strenght=100):
+def create_data_mixture(p,n1,n2,n_test, s=1, random_flip_prob=0, SNR=10, outlier=True, outlier_strenght=100, seed=0):
     
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+
     mu_1 = torch.zeros(p)
     mu_2 = torch.zeros(p)
 

@@ -45,16 +45,16 @@ hyperparameter_defaults = dict(
     learning_rate = 0.001,
     epochs = 1000,
     n=64,
-    loss_type='ce',
+    loss_type='poly',
     dataset = 'FashionMNIST-binary24',
-    architecture = 'CNN',
+    architecture = 'ResNet',
     seed = 0,
     momentum=0.9,
     weight_decay=0,
     test=True,
     left_loss='exp',
     alpha=1,
-    beta=1,
+    beta=1000,
     )
 
 
@@ -109,6 +109,7 @@ def main():
   iter=0
   for epoch in range(config['epochs']):
     train_acc=[]
+    margin_sum = []
     model.train()
 
     for i, (images, labels) in enumerate(train_loader):
@@ -140,9 +141,16 @@ def main():
 
         train_acc.append((torch.sum((torch.argmax(outputs, dim=1) == labels))).float())
 
+        if config.loss_type == 'poly':
+          target_sign = 2 * labels - 1
+          margin_scores = (outputs[:, 1] - outputs[:, 0]) * target_sign
+          indicator = margin_scores <= config.beta
+          margin_sum.append(torch.sum(indicator))
+
         iter += 1
 
     train_accuracy = sum(train_acc)/config.n
+    margin_ratio = sum(margin_sum)/config.n
 
     # Calculate Val Accuracy
     # model.eval()
@@ -182,6 +190,9 @@ def main():
     metrics = {'accuracy': accuracy, 'loss': loss, 'train_accuracy': train_accuracy}
     for label in range(10):
         metrics['Accuracy ' + label_names[label]] = correct_arr[label] / total_arr[label]
+
+    if config.loss_type == 'poly':
+      metrics['margin_ratio'] = margin_ratio
 
     wandb.log(metrics)
 
