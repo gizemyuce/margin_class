@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "c:\Users\gizem\Documents\GitHub\margin_class\margin_class_perf.py", line 460, in <module>
+    main()
+  File "c:\Users\gizem\Documents\GitHub\margin_class\margin_class_perf.py", line 96, in main
+    w = l2_poly1_avg(z1s, z2s)
+  File "c:\Users\gizem\Documents\GitHub\margin_class\src\margin_estimators\interpolating_const.py", line 53, in l2_poly1_avg
+    result = prob.solve(solver="MOSEK")
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\cvxpy\problems\problem.py", line 481, in solve
+    return solve_func(self, *args, **kwargs)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\cvxpy\problems\problem.py", line 1003, in _solve
+    data, solving_chain, inverse_data = self.get_problem_data(
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\cvxpy\problems\problem.py", line 607, in get_problem_data
+    solving_chain = self._construct_chain(
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\cvxpy\problems\problem.py", line 841, in _construct_chain
+    return construct_solving_chain(self, candidate_solvers, gp=gp,
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\cvxpy\reductions\solvers\solving_chain.py", line 162, in construct_solving_chain
+    reductions = _reductions_for_problem_class(problem, candidates, gp)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\cvxpy\reductions\solvers\solving_chain.py", line 94, in _reductions_for_problem_class
+    raise DCPError(
+cvxpy.error.DCPError: Problem does not follow DCP rules. Specifically:
+The objective is not DCP. Its following subexpressions are not:
+Promote(1.0, (5000,)) / var1

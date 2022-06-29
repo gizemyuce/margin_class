@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "c:\Users\gizem\Documents\GitHub\margin_class\margin_class_perf.py", line 460, in <module>
+    main()
+  File "c:\Users\gizem\Documents\GitHub\margin_class\margin_class_perf.py", line 96, in main
+    w = l2_poly1_avg(z1s, z2s)
+  File "c:\Users\gizem\Documents\GitHub\margin_class\src\margin_estimators\interpolating_const.py", line 48, in l2_poly1_avg
+    objective = cp.Maximize(harmonic_mean(Z_mtrx @ x))
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\cvxpy\expressions\expression.py", line 49, in cast_op
+    return binary_op(self, other)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\cvxpy\expressions\expression.py", line 647, in __rmatmul__
+    return cvxtypes.matmul_expr()(other, self)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\cvxpy\atoms\affine\binary_operators.py", line 50, in __init__
+    super(BinaryOperator, self).__init__(lh_exp, rh_exp)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\cvxpy\atoms\atom.py", line 51, in __init__
+    self._shape = self.shape_from_args()
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\cvxpy\atoms\affine\binary_operators.py", line 120, in shape_from_args
+    return u.shape.mul_shapes(self.args[0].shape, self.args[1].shape)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\cvxpy\utilities\shape.py", line 142, in mul_shapes
+    lh_shape, rh_shape, shape = mul_shapes_promote(lh_shape, rh_shape)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\cvxpy\utilities\shape.py", line 108, in mul_shapes_promote
+    raise ValueError("Incompatible dimensions %s %s" % (
+ValueError: Incompatible dimensions (1, 100) (5000, 1)

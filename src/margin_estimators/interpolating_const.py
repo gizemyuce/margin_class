@@ -1,3 +1,4 @@
+from statistics import harmonic_mean
 import cvxpy as cp
 import numpy as np
 import torch
@@ -38,11 +39,15 @@ def l2_poly1_avg(z1s, z2s):
     z_seq = torch.cat((z1s, z2s), dim=0)
     z_mean = torch.mean(z_seq, dim=0)
 
+    Z_mtrx = torch.diag(z_seq)
+
     d = z_seq.size(dim=1)
     n = z_seq.size(dim=0)
 
     x = cp.Variable(d)
-    objective = cp.Minimize((1/z_mean) @ (1/x))
+    objective = cp.Maximize(cp.harmonic_mean(z_seq @ x))
+    #objective = cp.Minimize(cp.sum(cp.power(z_seq, -1) @ cp.power(x, -1)) )
+    #objective = cp.Minimize(cp.sum((1/z_seq) @ (1/x)))
     constraints = [cp.norm(x,p=2) <= 1,-z_seq @ x <= torch.zeros(n)-1e-5]
     prob = cp.Problem(objective, constraints)
     result = prob.solve(solver="MOSEK")
@@ -61,7 +66,8 @@ def l1_poly1_avg(z1s, z2s):
     n = z_seq.size(dim=0)
 
     x = cp.Variable(d)
-    objective = cp.Minimize((1/z_mean) @ (1/x))
+    #objective = cp.Minimize((1/z_mean) @ (1/x))
+    objective = cp.Maximize(cp.harmonic_mean(z_seq @ x))
     constraints = [cp.norm(x,p=1) <= 1,-z_seq @ x <= torch.zeros(n)-1e-5]
     prob = cp.Problem(objective, constraints)
     result = prob.solve(solver="MOSEK")
