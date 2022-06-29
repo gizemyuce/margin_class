@@ -47,14 +47,14 @@ hyperparameter_defaults = dict(
     n=64,
     loss_type='poly',
     dataset = 'FashionMNIST-binary24',
-    architecture = 'ResNet',
+    architecture = 'CNN',
     seed = 0,
     momentum=0.9,
     weight_decay=0,
     test=True,
     left_loss='exp',
     alpha=1,
-    beta=3,
+    beta=0.0001,
     )
 
 
