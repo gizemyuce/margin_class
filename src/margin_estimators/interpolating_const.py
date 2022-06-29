@@ -33,6 +33,44 @@ def l2_average_interp(z1s, z2s):
 
     return w/torch.norm(w)
 
+def l2_poly1_avg(z1s, z2s):
+    
+    z_seq = torch.cat((z1s, z2s), dim=0)
+    z_mean = torch.mean(z_seq, dim=0)
+
+    d = z_seq.size(dim=1)
+    n = z_seq.size(dim=0)
+
+    x = cp.Variable(d)
+    objective = cp.Minimize((1/z_mean) @ (1/x))
+    constraints = [cp.norm(x,p=2) <= 1,-z_seq @ x <= torch.zeros(n)-1e-5]
+    prob = cp.Problem(objective, constraints)
+    result = prob.solve(solver="MOSEK")
+
+    w=x.value
+    w=torch.from_numpy(w).float()
+
+    return w/torch.norm(w)
+
+def l1_poly1_avg(z1s, z2s):
+    
+    z_seq = torch.cat((z1s, z2s), dim=0)
+    z_mean = torch.mean(z_seq, dim=0)
+
+    d = z_seq.size(dim=1)
+    n = z_seq.size(dim=0)
+
+    x = cp.Variable(d)
+    objective = cp.Minimize((1/z_mean) @ (1/x))
+    constraints = [cp.norm(x,p=1) <= 1,-z_seq @ x <= torch.zeros(n)-1e-5]
+    prob = cp.Problem(objective, constraints)
+    result = prob.solve(solver="MOSEK")
+
+    w=x.value
+    w=torch.from_numpy(w).float()
+
+    return w/torch.norm(w)
+
 def l1_average_interp(z1s, z2s, linear_program=True):
     
 

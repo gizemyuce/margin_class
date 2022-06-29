@@ -90,6 +90,10 @@ def main():
         w = min_l1_average_cf(z1s, z2s)
     elif config.estimator_type == 'l2-avg-cf':
         w = min_l2_average_cf(z1s, z2s)
+    elif config.estimator_type == 'l1-poly-limit':
+        w = l1_poly1_avg(z1s, z2s)
+    elif config.estimator_type == 'l2-poly-limit':
+        w = l2_poly1_avg(z1s, z2s)
 
     err_train = test_error(w, xs, ys)
     err = test_error(w, x_seq_test, y_seq_test)
