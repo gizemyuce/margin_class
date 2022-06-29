@@ -54,7 +54,7 @@ hyperparameter_defaults = dict(
     test=True,
     left_loss='exp',
     alpha=1,
-    beta=1000,
+    beta=3,
     )
 
 
