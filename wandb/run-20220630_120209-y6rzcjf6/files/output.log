@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "c:\Users\gizem\Documents\GitHub\margin_class\train_binary.py", line 214, in <module>
+    main()
+  File "c:\Users\gizem\Documents\GitHub\margin_class\train_binary.py", line 136, in main
+    loss = torch.mean(criterion(outputs, labels))
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "c:\Users\gizem\Documents\GitHub\margin_class\src\utils\loss_functions.py", line 92, in forward
+    loss_values = self.margin_fn(margin_scores)
+  File "c:\Users\gizem\Documents\GitHub\margin_class\src\utils\loss_functions.py", line 81, in margin_fn
+    self.alpha / (self.alpha - 1)
+ZeroDivisionError: float division by zero

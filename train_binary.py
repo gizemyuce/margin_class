@@ -1,3 +1,4 @@
+from sklearn.metrics import average_precision_score
 import torch
 import torch.nn as nn
 from matplotlib import pyplot as plt
@@ -33,7 +34,7 @@ import os
 import numpy as np
 
 from src.data_models.FMnist_loaders import get_binary_fmnist_loaders_01, get_binary_fmnist_loaders_24, get_binary_fmnist_loaders_24_3channels
-from src.utils.loss_functions import PolynomialLoss
+from src.utils.loss_functions import AverageMarginlLoss, PolynomialLoss, PolynomialLoss_pure
 from src.architectures.Resnet import ResNetBinary
 from src.architectures.Convnet import ConvNet_binary
 from src.architectures.CNN import CNNModel_binary
@@ -42,18 +43,19 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
 hyperparameter_defaults = dict(
-    learning_rate = 0.001,
+    learning_rate = 0.0001,
     epochs = 1000,
     n=64,
-    loss_type='poly',
+    loss_type='ce',
     dataset = 'FashionMNIST-binary24',
-    architecture = 'CNN',
+    architecture = 'ResNet',
     seed = 0,
     momentum=0.9,
     weight_decay=0,
     test=True,
-    left_loss='exp',
-    alpha=1,
+    left_loss='linear',
+    avg_mrgn_loss_type = '-',
+    alpha=1.05,
     beta=0,
     )
 
@@ -93,6 +95,10 @@ def main():
     criterion = nn.CrossEntropyLoss(reduction="none")
   elif config.loss_type == 'poly':
     criterion = PolynomialLoss(type=config.left_loss, alpha=config.alpha, beta=config.beta)
+  elif config.loss_type == 'poly-pure':
+    criterion = PolynomialLoss_pure(type=config.left_loss, alpha=config.alpha, beta=config.beta)
+  elif config.loss_type == 'avg':
+    criterion = AverageMarginlLoss(type = config.avg_mrgn_loss_type)
 
   if config.architecture == 'CNN':
     model = CNNModel_binary()

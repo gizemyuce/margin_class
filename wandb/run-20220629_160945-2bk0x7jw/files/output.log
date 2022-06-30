@@ -777,3 +777,225 @@ Epoch: 741 Loss: 0.0396 Train_Acc: 1.0000 Val_Accuracy: 0.7435
 Epoch: 742 Loss: 0.0396 Train_Acc: 1.0000 Val_Accuracy: 0.7440
 Epoch: 743 Loss: 0.0396 Train_Acc: 1.0000 Val_Accuracy: 0.7440
 Epoch: 744 Loss: 0.0396 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 745 Loss: 0.0396 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 746 Loss: 0.0395 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 747 Loss: 0.0395 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 748 Loss: 0.0395 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 749 Loss: 0.0395 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 750 Loss: 0.0395 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 751 Loss: 0.0394 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 752 Loss: 0.0394 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 753 Loss: 0.0394 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 754 Loss: 0.0394 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 755 Loss: 0.0394 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 756 Loss: 0.0393 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 757 Loss: 0.0393 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 758 Loss: 0.0393 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 759 Loss: 0.0393 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 760 Loss: 0.0393 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 761 Loss: 0.0392 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 762 Loss: 0.0392 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 763 Loss: 0.0392 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 764 Loss: 0.0392 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 765 Loss: 0.0392 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 766 Loss: 0.0391 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 767 Loss: 0.0391 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 768 Loss: 0.0391 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 769 Loss: 0.0391 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 770 Loss: 0.0391 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 771 Loss: 0.0390 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 772 Loss: 0.0390 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 773 Loss: 0.0390 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 774 Loss: 0.0390 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 775 Loss: 0.0390 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 776 Loss: 0.0389 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 777 Loss: 0.0389 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 778 Loss: 0.0389 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 779 Loss: 0.0389 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 780 Loss: 0.0389 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 781 Loss: 0.0388 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 782 Loss: 0.0388 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 783 Loss: 0.0388 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 784 Loss: 0.0388 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 785 Loss: 0.0388 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 786 Loss: 0.0387 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 787 Loss: 0.0387 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 788 Loss: 0.0387 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 789 Loss: 0.0387 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 790 Loss: 0.0387 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 791 Loss: 0.0386 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 792 Loss: 0.0386 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 793 Loss: 0.0386 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 794 Loss: 0.0386 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 795 Loss: 0.0386 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 796 Loss: 0.0386 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 797 Loss: 0.0385 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 798 Loss: 0.0385 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 799 Loss: 0.0385 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 800 Loss: 0.0385 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 801 Loss: 0.0385 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 802 Loss: 0.0384 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 803 Loss: 0.0384 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 804 Loss: 0.0384 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 805 Loss: 0.0384 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 806 Loss: 0.0384 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 807 Loss: 0.0383 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 808 Loss: 0.0383 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 809 Loss: 0.0383 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 810 Loss: 0.0383 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 811 Loss: 0.0383 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 812 Loss: 0.0383 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 813 Loss: 0.0382 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 814 Loss: 0.0382 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 815 Loss: 0.0382 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 816 Loss: 0.0382 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 817 Loss: 0.0382 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 818 Loss: 0.0381 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 819 Loss: 0.0381 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 820 Loss: 0.0381 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 821 Loss: 0.0381 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 822 Loss: 0.0381 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 823 Loss: 0.0381 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 824 Loss: 0.0380 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 825 Loss: 0.0380 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 826 Loss: 0.0380 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 827 Loss: 0.0380 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 828 Loss: 0.0380 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 829 Loss: 0.0379 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 830 Loss: 0.0379 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 831 Loss: 0.0379 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 832 Loss: 0.0379 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 833 Loss: 0.0379 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 834 Loss: 0.0379 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 835 Loss: 0.0378 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 836 Loss: 0.0378 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 837 Loss: 0.0378 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 838 Loss: 0.0378 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 839 Loss: 0.0378 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 840 Loss: 0.0377 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 841 Loss: 0.0377 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 842 Loss: 0.0377 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 843 Loss: 0.0377 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 844 Loss: 0.0377 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 845 Loss: 0.0377 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 846 Loss: 0.0376 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 847 Loss: 0.0376 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 848 Loss: 0.0376 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 849 Loss: 0.0376 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 850 Loss: 0.0376 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 851 Loss: 0.0376 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 852 Loss: 0.0375 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 853 Loss: 0.0375 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 854 Loss: 0.0375 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 855 Loss: 0.0375 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 856 Loss: 0.0375 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 857 Loss: 0.0375 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 858 Loss: 0.0374 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 859 Loss: 0.0374 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 860 Loss: 0.0374 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 861 Loss: 0.0374 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 862 Loss: 0.0374 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 863 Loss: 0.0374 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 864 Loss: 0.0373 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 865 Loss: 0.0373 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 866 Loss: 0.0373 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 867 Loss: 0.0373 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 868 Loss: 0.0373 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 869 Loss: 0.0372 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 870 Loss: 0.0372 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 871 Loss: 0.0372 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 872 Loss: 0.0372 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 873 Loss: 0.0372 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 874 Loss: 0.0372 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 875 Loss: 0.0371 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 876 Loss: 0.0371 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 877 Loss: 0.0371 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 878 Loss: 0.0371 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 879 Loss: 0.0371 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 880 Loss: 0.0371 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 881 Loss: 0.0370 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 882 Loss: 0.0370 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 883 Loss: 0.0370 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 884 Loss: 0.0370 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 885 Loss: 0.0370 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 886 Loss: 0.0370 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 887 Loss: 0.0370 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 888 Loss: 0.0369 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 889 Loss: 0.0369 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 890 Loss: 0.0369 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 891 Loss: 0.0369 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 892 Loss: 0.0369 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 893 Loss: 0.0369 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 894 Loss: 0.0368 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 895 Loss: 0.0368 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 896 Loss: 0.0368 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 897 Loss: 0.0368 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 898 Loss: 0.0368 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 899 Loss: 0.0368 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 900 Loss: 0.0367 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 901 Loss: 0.0367 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 902 Loss: 0.0367 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 903 Loss: 0.0367 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 904 Loss: 0.0367 Train_Acc: 1.0000 Val_Accuracy: 0.7440
+Epoch: 905 Loss: 0.0367 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 906 Loss: 0.0366 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 907 Loss: 0.0366 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 908 Loss: 0.0366 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 909 Loss: 0.0366 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 910 Loss: 0.0366 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 911 Loss: 0.0366 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 912 Loss: 0.0366 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 913 Loss: 0.0365 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 914 Loss: 0.0365 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 915 Loss: 0.0365 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 916 Loss: 0.0365 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 917 Loss: 0.0365 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 918 Loss: 0.0365 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 919 Loss: 0.0364 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 920 Loss: 0.0364 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 921 Loss: 0.0364 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 922 Loss: 0.0364 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 923 Loss: 0.0364 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 924 Loss: 0.0364 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 925 Loss: 0.0363 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 926 Loss: 0.0363 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 927 Loss: 0.0363 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 928 Loss: 0.0363 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 929 Loss: 0.0363 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 930 Loss: 0.0363 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 931 Loss: 0.0363 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 932 Loss: 0.0362 Train_Acc: 1.0000 Val_Accuracy: 0.7445
+Epoch: 933 Loss: 0.0362 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 934 Loss: 0.0362 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 935 Loss: 0.0362 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 936 Loss: 0.0362 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 937 Loss: 0.0362 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 938 Loss: 0.0361 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 939 Loss: 0.0361 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 940 Loss: 0.0361 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 941 Loss: 0.0361 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Epoch: 942 Loss: 0.0361 Train_Acc: 1.0000 Val_Accuracy: 0.7450
+Traceback (most recent call last):
+  File "c:\Users\gizem\Documents\GitHub\margin_class\train_binary.py", line 212, in <module>
+    main()
+  File "c:\Users\gizem\Documents\GitHub\margin_class\train_binary.py", line 169, in main
+    for images, labels in loader:
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torchvision\datasets\mnist.py", line 145, in __getitem__
+    img = self.transform(img)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torchvision\transforms\transforms.py", line 95, in __call__
+    img = t(img)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torchvision\transforms\transforms.py", line 270, in forward
+    return F.normalize(tensor, self.mean, self.std, self.inplace)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torchvision\transforms\functional.py", line 363, in normalize
+    tensor.sub_(mean).div_(std)
+KeyboardInterrupt

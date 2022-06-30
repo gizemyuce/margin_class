@@ -1,0 +1,103 @@
+
+Epoch: 0 Loss: 1.2519 Train_Acc: 0.3750 Val_Accuracy: 0.5035
+Epoch: 1 Loss: 1.1516 Train_Acc: 0.4688 Val_Accuracy: 0.5105
+Epoch: 2 Loss: 0.9867 Train_Acc: 0.5938 Val_Accuracy: 0.4980
+Epoch: 3 Loss: 1.0690 Train_Acc: 0.5469 Val_Accuracy: 0.5050
+Epoch: 4 Loss: 1.0928 Train_Acc: 0.5156 Val_Accuracy: 0.5245
+Epoch: 5 Loss: 1.0440 Train_Acc: 0.6094 Val_Accuracy: 0.5195
+Epoch: 6 Loss: 1.0422 Train_Acc: 0.5312 Val_Accuracy: 0.4910
+Epoch: 7 Loss: 1.0149 Train_Acc: 0.5781 Val_Accuracy: 0.5135
+Epoch: 8 Loss: 0.9652 Train_Acc: 0.6094 Val_Accuracy: 0.5375
+Epoch: 9 Loss: 0.9974 Train_Acc: 0.5625 Val_Accuracy: 0.5300
+Epoch: 10 Loss: 0.9675 Train_Acc: 0.6875 Val_Accuracy: 0.5260
+Epoch: 11 Loss: 1.0516 Train_Acc: 0.5312 Val_Accuracy: 0.5435
+Epoch: 12 Loss: 1.0495 Train_Acc: 0.4688 Val_Accuracy: 0.5455
+Epoch: 13 Loss: 1.0077 Train_Acc: 0.6094 Val_Accuracy: 0.5505
+Epoch: 14 Loss: 1.0114 Train_Acc: 0.5938 Val_Accuracy: 0.5605
+Epoch: 15 Loss: 1.0105 Train_Acc: 0.4844 Val_Accuracy: 0.5575
+Epoch: 16 Loss: 1.0687 Train_Acc: 0.5469 Val_Accuracy: 0.5790
+Epoch: 17 Loss: 0.9975 Train_Acc: 0.6094 Val_Accuracy: 0.5735
+Epoch: 18 Loss: 0.9582 Train_Acc: 0.5781 Val_Accuracy: 0.5910
+Epoch: 19 Loss: 0.9531 Train_Acc: 0.5938 Val_Accuracy: 0.5875
+Epoch: 20 Loss: 0.9758 Train_Acc: 0.6250 Val_Accuracy: 0.5935
+Epoch: 21 Loss: 0.9897 Train_Acc: 0.5938 Val_Accuracy: 0.5920
+Epoch: 22 Loss: 0.9540 Train_Acc: 0.6250 Val_Accuracy: 0.5990
+Epoch: 23 Loss: 0.9186 Train_Acc: 0.7031 Val_Accuracy: 0.5725
+Epoch: 24 Loss: 0.9445 Train_Acc: 0.6094 Val_Accuracy: 0.6165
+Epoch: 25 Loss: 0.9585 Train_Acc: 0.6250 Val_Accuracy: 0.6255
+Epoch: 26 Loss: 0.9546 Train_Acc: 0.6250 Val_Accuracy: 0.6330
+Epoch: 27 Loss: 0.9528 Train_Acc: 0.6562 Val_Accuracy: 0.6110
+Epoch: 28 Loss: 0.9513 Train_Acc: 0.6875 Val_Accuracy: 0.6165
+Epoch: 29 Loss: 0.9505 Train_Acc: 0.6250 Val_Accuracy: 0.6175
+Epoch: 30 Loss: 0.9528 Train_Acc: 0.6250 Val_Accuracy: 0.6125
+Epoch: 31 Loss: 0.9505 Train_Acc: 0.6562 Val_Accuracy: 0.6325
+Epoch: 32 Loss: 0.9406 Train_Acc: 0.6406 Val_Accuracy: 0.6315
+Epoch: 33 Loss: 0.9241 Train_Acc: 0.6875 Val_Accuracy: 0.6410
+Epoch: 34 Loss: 0.9620 Train_Acc: 0.5938 Val_Accuracy: 0.6450
+Epoch: 35 Loss: 0.9252 Train_Acc: 0.7500 Val_Accuracy: 0.6425
+Epoch: 36 Loss: 0.9079 Train_Acc: 0.7344 Val_Accuracy: 0.6535
+Epoch: 37 Loss: 0.9323 Train_Acc: 0.6406 Val_Accuracy: 0.6505
+Epoch: 38 Loss: 0.9195 Train_Acc: 0.7344 Val_Accuracy: 0.6410
+Epoch: 39 Loss: 0.9081 Train_Acc: 0.7500 Val_Accuracy: 0.6310
+Epoch: 40 Loss: 0.9255 Train_Acc: 0.7031 Val_Accuracy: 0.6405
+Epoch: 41 Loss: 0.9490 Train_Acc: 0.6406 Val_Accuracy: 0.6500
+Epoch: 42 Loss: 0.9320 Train_Acc: 0.6875 Val_Accuracy: 0.6550
+Epoch: 43 Loss: 0.8904 Train_Acc: 0.7500 Val_Accuracy: 0.6565
+Epoch: 44 Loss: 0.9292 Train_Acc: 0.6719 Val_Accuracy: 0.6570
+Epoch: 45 Loss: 0.9007 Train_Acc: 0.7656 Val_Accuracy: 0.6675
+Epoch: 46 Loss: 0.9291 Train_Acc: 0.6875 Val_Accuracy: 0.6550
+Epoch: 47 Loss: 0.8934 Train_Acc: 0.7656 Val_Accuracy: 0.6635
+Epoch: 48 Loss: 0.9156 Train_Acc: 0.7031 Val_Accuracy: 0.6680
+Epoch: 49 Loss: 0.9239 Train_Acc: 0.7344 Val_Accuracy: 0.6640
+Epoch: 50 Loss: 0.9122 Train_Acc: 0.6406 Val_Accuracy: 0.6555
+Epoch: 51 Loss: 0.9263 Train_Acc: 0.7031 Val_Accuracy: 0.6635
+Epoch: 52 Loss: 0.9214 Train_Acc: 0.7031 Val_Accuracy: 0.6775
+Epoch: 53 Loss: 0.8760 Train_Acc: 0.7969 Val_Accuracy: 0.6640
+Epoch: 54 Loss: 0.9189 Train_Acc: 0.6562 Val_Accuracy: 0.6530
+Epoch: 55 Loss: 0.9214 Train_Acc: 0.7031 Val_Accuracy: 0.6800
+Epoch: 56 Loss: 0.9102 Train_Acc: 0.7656 Val_Accuracy: 0.6755
+Epoch: 57 Loss: 0.8934 Train_Acc: 0.7031 Val_Accuracy: 0.6780
+Epoch: 58 Loss: 0.8823 Train_Acc: 0.7812 Val_Accuracy: 0.6860
+Epoch: 59 Loss: 0.8986 Train_Acc: 0.7344 Val_Accuracy: 0.6885
+Epoch: 60 Loss: 0.9003 Train_Acc: 0.7500 Val_Accuracy: 0.6930
+Epoch: 61 Loss: 0.8756 Train_Acc: 0.7500 Val_Accuracy: 0.6765
+Epoch: 62 Loss: 0.9069 Train_Acc: 0.7188 Val_Accuracy: 0.6855
+Epoch: 63 Loss: 0.9024 Train_Acc: 0.7188 Val_Accuracy: 0.6745
+Epoch: 64 Loss: 0.8493 Train_Acc: 0.7344 Val_Accuracy: 0.6800
+Epoch: 65 Loss: 0.8767 Train_Acc: 0.7344 Val_Accuracy: 0.6830
+Epoch: 66 Loss: 0.8831 Train_Acc: 0.7344 Val_Accuracy: 0.6845
+Epoch: 67 Loss: 0.8678 Train_Acc: 0.7656 Val_Accuracy: 0.6855
+Epoch: 68 Loss: 0.8932 Train_Acc: 0.7344 Val_Accuracy: 0.6920
+Epoch: 69 Loss: 0.8909 Train_Acc: 0.7500 Val_Accuracy: 0.6890
+Epoch: 70 Loss: 0.8870 Train_Acc: 0.7500 Val_Accuracy: 0.6905
+Epoch: 71 Loss: 0.8636 Train_Acc: 0.7812 Val_Accuracy: 0.6840
+Epoch: 72 Loss: 0.8763 Train_Acc: 0.8281 Val_Accuracy: 0.7035
+Epoch: 73 Loss: 0.8967 Train_Acc: 0.6719 Val_Accuracy: 0.6975
+Epoch: 74 Loss: 0.8532 Train_Acc: 0.7812 Val_Accuracy: 0.7130
+Epoch: 75 Loss: 0.8954 Train_Acc: 0.7500 Val_Accuracy: 0.6995
+Epoch: 76 Loss: 0.8736 Train_Acc: 0.7500 Val_Accuracy: 0.6815
+Epoch: 77 Loss: 0.8713 Train_Acc: 0.7969 Val_Accuracy: 0.6760
+Traceback (most recent call last):
+  File "c:\Users\gizem\Documents\GitHub\margin_class\train_binary.py", line 212, in <module>
+    main()
+  File "c:\Users\gizem\Documents\GitHub\margin_class\train_binary.py", line 169, in main
+    for images, labels in loader:
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torchvision\datasets\mnist.py", line 142, in __getitem__
+    img = Image.fromarray(img.numpy(), mode="L")
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\PIL\Image.py", line 2949, in fromarray
+    return frombuffer(mode, size, obj, "raw", rawmode, 0, 1)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\PIL\Image.py", line 2871, in frombuffer
+    im = new(mode, (1, 1))
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\PIL\Image.py", line 2785, in new
+    return im._new(core.fill(mode, size, color))
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\PIL\Image.py", line 567, in _new
+    if im.mode in ("P", "PA"):
+KeyboardInterrupt
