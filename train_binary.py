@@ -44,12 +44,12 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
 hyperparameter_defaults = dict(
-    learning_rate = 0.01,
+    learning_rate = 0.001,
     epochs = 1000,
     n=64,
     loss_type='avg',
     dataset = 'FashionMNIST-binary24',
-    architecture = 'CNN',
+    architecture = 'ResNet',
     seed = 0,
     momentum=0.9,
     weight_decay=0,
@@ -58,7 +58,7 @@ hyperparameter_defaults = dict(
     avg_mrgn_loss_type = '-',
     alpha=1.05,
     beta=0,
-    scheduler_step=100,
+    scheduler_step=300,
     scheduler_gamma = 0.1,
     )
 
