@@ -44,7 +44,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
 hyperparameter_defaults = dict(
-    learning_rate = 0.001,
+    learning_rate = 0.01,
     epochs = 1000,
     n=64,
     loss_type='avg',
@@ -161,7 +161,7 @@ def main():
         iter += 1
     
     scheduler.step()
-    
+
     train_accuracy = sum(train_acc)/config.n
     margin_ratio = sum(margin_sum)/config.n
 
