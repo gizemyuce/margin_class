@@ -11,6 +11,7 @@ import torch.optim as optim
 import time
 import tqdm as tqdm
 from torch.autograd import Variable
+from torch.optim.lr_scheduler import StepLR
 
 import random
 
@@ -43,12 +44,12 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
 hyperparameter_defaults = dict(
-    learning_rate = 0.01,
+    learning_rate = 0.001,
     epochs = 1000,
     n=64,
     loss_type='avg',
     dataset = 'FashionMNIST-binary24',
-    architecture = 'ResNet',
+    architecture = 'CNN',
     seed = 0,
     momentum=0.9,
     weight_decay=0,
@@ -57,6 +58,8 @@ hyperparameter_defaults = dict(
     avg_mrgn_loss_type = '-',
     alpha=1.05,
     beta=0,
+    scheduler_step=100,
+    scheluder_gamma = 0.1,
     )
 
 
@@ -112,6 +115,8 @@ def main():
   wandb.watch(model)
   
   optimizer = torch.optim.SGD(model.parameters(), lr=config.learning_rate, momentum=config.momentum, weight_decay=config.weight_decay)
+  scheduler = StepLR(optimizer, step_size=config.scheduler_step, gamma=config.scheduler_gamma)
+  
   iter=0
   for epoch in range(config['epochs']):
     train_acc=[]
@@ -154,7 +159,9 @@ def main():
           margin_sum.append(torch.sum(indicator))
 
         iter += 1
-
+    
+    scheduler.step()
+    
     train_accuracy = sum(train_acc)/config.n
     margin_ratio = sum(margin_sum)/config.n
 
