@@ -58,7 +58,7 @@ hyperparameter_defaults = dict(
     avg_mrgn_loss_type = '-',
     alpha=1.05,
     beta=0,
-    scheduler_step=300,
+    scheduler_step=100,
     scheduler_gamma = 0.1,
     )
 
