@@ -200,7 +200,7 @@ def main():
         total += labels.size(0)
         correct += (predicted == labels).sum()
 
-        for label in range(10):
+        for label in range(2):
             correct_arr[label] += (((predicted == labels) & (labels==label)).sum())
             total_arr[label] += (labels == label).sum()
 
@@ -208,7 +208,7 @@ def main():
 
     metrics = {'accuracy': accuracy, 'loss': loss, 'train_accuracy': train_accuracy}
     
-    for label in range(10):
+    for label in range(2):
         metrics['Accuracy ' + label_names[label]] = correct_arr[label] / total_arr[label]
 
     if config.loss_type == 'poly':
@@ -224,7 +224,7 @@ def main():
   elif config.loss_type=='poly':
     poly_test_final = accuracy
 
-  torch.save(model.state_dict(), os.path.join(wandb.run.dir, "model.pt"))
+  #torch.save(model.state_dict(), os.path.join(wandb.run.dir, "model.pt"))
   wandb.finish()
 
 
