@@ -54,7 +54,7 @@ hyperparameter_defaults = dict(
     seed = 0,
     momentum=0.9,
     weight_decay=0,
-    test=True,
+    test=False,
     left_loss='linear',
     avg_mrgn_loss_type = '-',
     alpha=1.05,
@@ -114,7 +114,7 @@ def main():
     
   model = model.to(device) 
 
-  wandb.watch(model)
+  # wandb.watch(model)
   
   optimizer = torch.optim.SGD(model.parameters(), lr=config.learning_rate, momentum=config.momentum, weight_decay=config.weight_decay)
   scheduler = StepLR(optimizer, step_size=config.scheduler_step, gamma=config.scheduler_gamma)
