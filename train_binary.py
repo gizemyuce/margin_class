@@ -85,6 +85,10 @@ def main():
         "Sneaker",
         "Bag",
         "Boot"]
+        
+  label_names = [
+        "Class1",
+        "Class2"]
 
   if config.dataset == 'FashionMNIST-binary01':
     train_loader, val_loader, test_loader = get_binary_fmnist_loaders_01(config.n, batch_size_train=None, batch_size=128, seed=config.seed)
@@ -203,6 +207,7 @@ def main():
     accuracy = correct / total
 
     metrics = {'accuracy': accuracy, 'loss': loss, 'train_accuracy': train_accuracy}
+    
     for label in range(10):
         metrics['Accuracy ' + label_names[label]] = correct_arr[label] / total_arr[label]
 
