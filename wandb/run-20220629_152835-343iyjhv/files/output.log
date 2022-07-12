@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "c:\Users\gizem\Documents\GitHub\margin_class\margin_class_perf.py", line 460, in <module>
-    main()
-  File "c:\Users\gizem\Documents\GitHub\margin_class\margin_class_perf.py", line 98, in main
-    err_train = test_error(w, xs, ys)
-UnboundLocalError: local variable 'w' referenced before assignment

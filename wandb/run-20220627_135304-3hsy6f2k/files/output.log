@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "c:\Users\gizem\Documents\GitHub\margin_class\margin_class_perf.py", line 456, in <module>
-    main()
-  File "c:\Users\gizem\Documents\GitHub\margin_class\margin_class_perf.py", line 84, in main
-    w = l2_average_interp(z1s, z2s)
-  File "c:\Users\gizem\Documents\GitHub\margin_class\src\margin_estimators\interpolating_const.py", line 16, in l2_average_interp
-    constraints = [cp.norm(x,p=2) <= 1,-z_seq @ x <= torch.zeros(n)-1e-5]
-NameError: name 'n' is not defined

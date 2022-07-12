@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "c:\Users\gizem\Documents\GitHub\margin_class\margin_class_perf.py", line 460, in <module>
-    main()
-  File "c:\Users\gizem\Documents\GitHub\margin_class\margin_class_perf.py", line 96, in main
-    w = l2_poly1_avg(z1s, z2s)
-  File "c:\Users\gizem\Documents\GitHub\margin_class\src\margin_estimators\interpolating_const.py", line 56, in l2_poly1_avg
-    w=torch.from_numpy(w).float()
-TypeError: expected np.ndarray (got NoneType)
