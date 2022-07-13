@@ -1,0 +1,81 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Epoch: 0 Loss: 0.6932 Train_Acc: 0.5312 Val_Accuracy: 0.5338
+Epoch: 1 Loss: 0.5105 Train_Acc: 0.7656 Val_Accuracy: 0.5378
+Epoch: 2 Loss: 0.3939 Train_Acc: 0.8594 Val_Accuracy: 0.5148
+Epoch: 3 Loss: 0.1755 Train_Acc: 0.9688 Val_Accuracy: 0.5508
+Epoch: 4 Loss: 0.0541 Train_Acc: 1.0000 Val_Accuracy: 0.5693
+Epoch: 5 Loss: 0.0146 Train_Acc: 1.0000 Val_Accuracy: 0.5783
+Epoch: 6 Loss: 0.0059 Train_Acc: 1.0000 Val_Accuracy: 0.5748
+Epoch: 7 Loss: 0.0025 Train_Acc: 1.0000 Val_Accuracy: 0.5783
+Epoch: 8 Loss: 0.0013 Train_Acc: 1.0000 Val_Accuracy: 0.5823
+Epoch: 9 Loss: 0.0009 Train_Acc: 1.0000 Val_Accuracy: 0.5793
+Epoch: 10 Loss: 0.0006 Train_Acc: 1.0000 Val_Accuracy: 0.5818
+Epoch: 11 Loss: 0.0005 Train_Acc: 1.0000 Val_Accuracy: 0.5863
+Epoch: 12 Loss: 0.0004 Train_Acc: 1.0000 Val_Accuracy: 0.5873
+Epoch: 13 Loss: 0.0003 Train_Acc: 1.0000 Val_Accuracy: 0.5843
+Epoch: 14 Loss: 0.0002 Train_Acc: 1.0000 Val_Accuracy: 0.5813
+Epoch: 15 Loss: 0.0001 Train_Acc: 1.0000 Val_Accuracy: 0.5803
+Epoch: 16 Loss: 0.0001 Train_Acc: 1.0000 Val_Accuracy: 0.5783
+Epoch: 17 Loss: 0.0001 Train_Acc: 1.0000 Val_Accuracy: 0.5788
+Epoch: 18 Loss: 0.0001 Train_Acc: 1.0000 Val_Accuracy: 0.5788
+Epoch: 19 Loss: 0.0001 Train_Acc: 1.0000 Val_Accuracy: 0.5788
+Epoch: 20 Loss: 0.0001 Train_Acc: 1.0000 Val_Accuracy: 0.5803
+Epoch: 21 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5803
+Epoch: 22 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5803
+Epoch: 23 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5813
+Epoch: 24 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5813
+Epoch: 25 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5833
+Epoch: 26 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5853
+Epoch: 27 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5858
+Epoch: 28 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5853
+Epoch: 29 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5853
+Epoch: 30 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5843
+Epoch: 31 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5848
+Epoch: 32 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5848
+Epoch: 33 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5828
+Epoch: 34 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5828
+Epoch: 35 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5833
+Epoch: 36 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5828
+Epoch: 37 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5823
+Epoch: 38 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5823
+Epoch: 39 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5818
+Epoch: 40 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5818
+Epoch: 41 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5818
+Epoch: 42 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5818
+Epoch: 43 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5818
+Epoch: 44 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5818
+Epoch: 45 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5818
+Epoch: 46 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5818
+Epoch: 47 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5823
+Epoch: 48 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5818
+Epoch: 49 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5813
+Epoch: 50 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5813
+Epoch: 51 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5813
+Epoch: 52 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5813
+Epoch: 53 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5813
+Epoch: 54 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5813
+Epoch: 55 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5813
+Epoch: 56 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5808
+Epoch: 57 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5808
+Epoch: 58 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5808
+Epoch: 59 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5808
+Epoch: 60 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5813
+Epoch: 61 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5813
+Epoch: 62 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5813
+Epoch: 63 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5813
+Epoch: 64 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5813
+Epoch: 65 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5813
+Epoch: 66 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5808
+Epoch: 67 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.5803
+Traceback (most recent call last):
+  File "c:\Users\gizem\Documents\GitHub\margin_class\train_binary.py", line 232, in <module>
+    main()
+  File "c:\Users\gizem\Documents\GitHub\margin_class\train_binary.py", line 154, in main
+    loss.backward()
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\_tensor.py", line 363, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\autograd\__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

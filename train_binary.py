@@ -35,7 +35,7 @@ import os
 import numpy as np
 
 from src.data_models.FMnist_loaders import get_binary_fmnist_loaders_01, get_binary_fmnist_loaders_24, get_binary_fmnist_loaders_24_3channels
-from src.data_models.CIFAR_loaders import get_binary_cifar10_loaders_cat_dog_3channels
+from src.data_models.CIFAR_loaders import get_binary_cifar10_loaders_bird_plane, get_binary_cifar10_loaders_cat_dog_3channels
 from src.utils.loss_functions import AverageMarginlLoss, PolynomialLoss, PolynomialLoss_pure
 from src.architectures.Resnet import ResNetBinary
 from src.architectures.Convnet import ConvNet_binary
@@ -45,11 +45,11 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
 hyperparameter_defaults = dict(
-    learning_rate = 0.001,
+    learning_rate = 0.025,
     epochs = 1000,
     n=64,
     loss_type='ce',
-    dataset = 'CIFAR10-cd',
+    dataset = 'CIFAR10-bp',
     architecture = 'ResNet',
     seed = 0,
     momentum=0.9,
@@ -99,6 +99,8 @@ def main():
       train_loader, val_loader, test_loader = get_binary_fmnist_loaders_24(config.n, batch_size_train=None, batch_size=128, seed=config.seed)
   elif config.dataset == 'CIFAR10-cd':
     train_loader, val_loader, test_loader = get_binary_cifar10_loaders_cat_dog_3channels(config.n, batch_size_train=None, batch_size=128, seed=config.seed)
+  elif config.dataset == 'CIFAR10-bp':
+    train_loader, val_loader, test_loader = get_binary_cifar10_loaders_bird_plane(config.n, batch_size_train=None, batch_size=128, seed=config.seed)
 
   if config.loss_type == 'ce':
     criterion = nn.CrossEntropyLoss(reduction="none")

@@ -1,0 +1,60 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Epoch: 0 Loss: 0.7455 Train_Acc: 0.4531 Val_Accuracy: 0.6018
+Epoch: 1 Loss: 0.5173 Train_Acc: 0.7500 Val_Accuracy: 0.6668
+Epoch: 2 Loss: 0.2645 Train_Acc: 0.9062 Val_Accuracy: 0.7084
+Epoch: 3 Loss: 0.1562 Train_Acc: 0.9375 Val_Accuracy: 0.7089
+Epoch: 4 Loss: 0.0339 Train_Acc: 1.0000 Val_Accuracy: 0.7099
+Epoch: 5 Loss: 0.0181 Train_Acc: 1.0000 Val_Accuracy: 0.7109
+Epoch: 6 Loss: 0.0072 Train_Acc: 1.0000 Val_Accuracy: 0.7164
+Epoch: 7 Loss: 0.0038 Train_Acc: 1.0000 Val_Accuracy: 0.7234
+Epoch: 8 Loss: 0.0020 Train_Acc: 1.0000 Val_Accuracy: 0.7269
+Epoch: 9 Loss: 0.0012 Train_Acc: 1.0000 Val_Accuracy: 0.7319
+Epoch: 10 Loss: 0.0010 Train_Acc: 1.0000 Val_Accuracy: 0.7324
+Epoch: 11 Loss: 0.0004 Train_Acc: 1.0000 Val_Accuracy: 0.7329
+Epoch: 12 Loss: 0.0003 Train_Acc: 1.0000 Val_Accuracy: 0.7279
+Epoch: 13 Loss: 0.0002 Train_Acc: 1.0000 Val_Accuracy: 0.7284
+Epoch: 14 Loss: 0.0002 Train_Acc: 1.0000 Val_Accuracy: 0.7324
+Epoch: 15 Loss: 0.0002 Train_Acc: 1.0000 Val_Accuracy: 0.7334
+Epoch: 16 Loss: 0.0002 Train_Acc: 1.0000 Val_Accuracy: 0.7344
+Epoch: 17 Loss: 0.0001 Train_Acc: 1.0000 Val_Accuracy: 0.7364
+Epoch: 18 Loss: 0.0001 Train_Acc: 1.0000 Val_Accuracy: 0.7364
+Epoch: 19 Loss: 0.0001 Train_Acc: 1.0000 Val_Accuracy: 0.7369
+Epoch: 20 Loss: 0.0001 Train_Acc: 1.0000 Val_Accuracy: 0.7369
+Epoch: 21 Loss: 0.0001 Train_Acc: 1.0000 Val_Accuracy: 0.7364
+Epoch: 22 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.7384
+Epoch: 23 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.7389
+Epoch: 24 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.7394
+Epoch: 25 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.7394
+Epoch: 26 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.7399
+Epoch: 27 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.7384
+Epoch: 28 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.7384
+Epoch: 29 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.7384
+Epoch: 30 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.7374
+Epoch: 31 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.7379
+Epoch: 32 Loss: 0.0000 Train_Acc: 1.0000 Val_Accuracy: 0.7364
+Traceback (most recent call last):
+  File "c:\Users\gizem\Documents\GitHub\margin_class\train_binary.py", line 234, in <module>
+    main()
+  File "c:\Users\gizem\Documents\GitHub\margin_class\train_binary.py", line 196, in main
+    outputs = model(images)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "c:\Users\gizem\Documents\GitHub\margin_class\src\architectures\Resnet.py", line 55, in forward
+    x = self.layer4(x)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\container.py", line 141, in forward
+    input = module(input)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torchvision\models\resnet.py", line 90, in forward
+    out = self.conv1(x)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\conv.py", line 443, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+KeyboardInterrupt

@@ -25,7 +25,7 @@ def get_binary_cifar10_loaders_cat_dog_3channels(n_train, n_val=2000, batch_size
 
   transform = transforms.Compose(
       [transforms.ToTensor(),
-      transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
+      transforms.Normalize((0.4914, 0.4822, 0.4466), (0.247, 0.243, 0.261))])
 
   
   train_dataset = datasets.CIFAR10(root='./data', train=True,
@@ -44,6 +44,53 @@ def get_binary_cifar10_loaders_cat_dog_3channels(n_train, n_val=2000, batch_size
   train_dataset = extract_classes_from_dataset(train_dataset, 3, 5)
   val_dataset = extract_classes_from_dataset(val_dataset, 3, 5)
   test_dataset = extract_classes_from_dataset(test_dataset, 3, 5)
+
+  train_dataset, val_dataset = train_val_split(train_dataset, val_dataset, n_train, n_val)
+
+  train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
+                                              batch_size=batch_size_train,
+                                              shuffle=True)
+  
+  val_loader = torch.utils.data.DataLoader(dataset=val_dataset,
+                                              batch_size=batch_size,
+                                              shuffle=False)
+
+  test_loader = torch.utils.data.DataLoader(dataset=test_dataset,
+                                            batch_size=batch_size,
+                                            shuffle=False)
+
+  return train_loader, val_loader, test_loader
+
+def get_binary_cifar10_loaders_bird_plane(n_train, n_val=2000, batch_size_train=None, batch_size=128, seed=0):
+
+  torch.manual_seed(seed)
+  random.seed(seed)
+  np.random.seed(seed)
+  
+  if batch_size_train == None:
+    batch_size_train = n_train
+
+  transform = transforms.Compose(
+      [transforms.ToTensor(),
+      transforms.Normalize((0.4914, 0.4822, 0.4466), (0.247, 0.243, 0.261))])
+
+  
+  train_dataset = datasets.CIFAR10(root='./data', train=True,
+                                          download=True, transform=transform)
+  
+  val_dataset = datasets.CIFAR10(root='./data', train=True,
+                                          download=True, transform=transform)
+
+  test_dataset = datasets.CIFAR10(root='./data', train=False,
+                                      download=True, transform=transform)
+
+
+  classes = ('plane', 'car', 'bird', 'cat',
+          'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
+ 
+  train_dataset = extract_classes_from_dataset(train_dataset, 0, 2)
+  val_dataset = extract_classes_from_dataset(val_dataset, 0, 2)
+  test_dataset = extract_classes_from_dataset(test_dataset, 0, 2)
 
   train_dataset, val_dataset = train_val_split(train_dataset, val_dataset, n_train, n_val)
 

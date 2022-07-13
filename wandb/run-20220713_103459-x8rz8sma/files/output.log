@@ -1,0 +1,38 @@
+
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Epoch: 0 Loss: 0.6932 Train_Acc: 0.5312 Val_Accuracy: 0.5338
+Epoch: 1 Loss: 0.5105 Train_Acc: 0.7656 Val_Accuracy: 0.5378
+Epoch: 2 Loss: 0.3939 Train_Acc: 0.8594 Val_Accuracy: 0.5148
+Epoch: 3 Loss: 0.1755 Train_Acc: 0.9688 Val_Accuracy: 0.5508
+Epoch: 4 Loss: 0.0541 Train_Acc: 1.0000 Val_Accuracy: 0.5693
+Epoch: 5 Loss: 0.0146 Train_Acc: 1.0000 Val_Accuracy: 0.5783
+Epoch: 6 Loss: 0.0059 Train_Acc: 1.0000 Val_Accuracy: 0.5748
+Epoch: 7 Loss: 0.0025 Train_Acc: 1.0000 Val_Accuracy: 0.5783
+Epoch: 8 Loss: 0.0013 Train_Acc: 1.0000 Val_Accuracy: 0.5823
+Epoch: 9 Loss: 0.0009 Train_Acc: 1.0000 Val_Accuracy: 0.5793
+Traceback (most recent call last):
+  File "c:\Users\gizem\Documents\GitHub\margin_class\train_binary.py", line 232, in <module>
+    main()
+  File "c:\Users\gizem\Documents\GitHub\margin_class\train_binary.py", line 188, in main
+    for images, labels in loader:
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torchvision\datasets\cifar.py", line 118, in __getitem__
+    img = self.transform(img)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torchvision\transforms\transforms.py", line 95, in __call__
+    img = t(img)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torchvision\transforms\transforms.py", line 270, in forward
+    return F.normalize(tensor, self.mean, self.std, self.inplace)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torchvision\transforms\functional.py", line 356, in normalize
+    std = torch.as_tensor(std, dtype=dtype, device=tensor.device)
+KeyboardInterrupt
