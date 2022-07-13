@@ -49,7 +49,7 @@ hyperparameter_defaults = dict(
     epochs = 1000,
     n=8000,
     loss_type='ce',
-    dataset = 'CIFAR10-bp',
+    dataset = 'CIFAR10-cd',
     architecture = 'ResNet',
     seed = 0,
     momentum=0.9,
@@ -60,7 +60,7 @@ hyperparameter_defaults = dict(
     alpha=1.05,
     beta=0,
     scheduler_step=300,
-    scheduler_gamma = 0.1,
+    scheduler_gamma = 0.9,
     batchsize_train = 128,
     )
 
