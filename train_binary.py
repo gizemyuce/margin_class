@@ -61,6 +61,7 @@ hyperparameter_defaults = dict(
     beta=0,
     scheduler_step=300,
     scheduler_gamma = 0.1,
+    batchsize_train = 128,
     )
 
 
@@ -91,16 +92,16 @@ def main():
         "Class2"]
 
   if config.dataset == 'FashionMNIST-binary01':
-    train_loader, val_loader, test_loader = get_binary_fmnist_loaders_01(config.n, batch_size_train=None, batch_size=128, seed=config.seed)
+    train_loader, val_loader, test_loader = get_binary_fmnist_loaders_01(config.n, batch_size_train=config.batchsize_train, batch_size=128, seed=config.seed)
   elif config.dataset == 'FashionMNIST-binary24':
     if config.architecture == 'ResNet':
-      train_loader, val_loader, test_loader = get_binary_fmnist_loaders_24_3channels(config.n, batch_size_train=None, batch_size=128, seed=config.seed)
+      train_loader, val_loader, test_loader = get_binary_fmnist_loaders_24_3channels(config.n, batch_size_train=config.batchsize_train, batch_size=128, seed=config.seed)
     else:
-      train_loader, val_loader, test_loader = get_binary_fmnist_loaders_24(config.n, batch_size_train=None, batch_size=128, seed=config.seed)
+      train_loader, val_loader, test_loader = get_binary_fmnist_loaders_24(config.n, batch_size_train=config.batchsize_train, batch_size=128, seed=config.seed)
   elif config.dataset == 'CIFAR10-cd':
-    train_loader, val_loader, test_loader = get_binary_cifar10_loaders_cat_dog_3channels(config.n, batch_size_train=None, batch_size=128, seed=config.seed)
+    train_loader, val_loader, test_loader = get_binary_cifar10_loaders_cat_dog_3channels(config.n, batch_size_train=config.batchsize_train, batch_size=128, seed=config.seed)
   elif config.dataset == 'CIFAR10-bp':
-    train_loader, val_loader, test_loader = get_binary_cifar10_loaders_bird_plane(config.n, batch_size_train=None, batch_size=128, seed=config.seed)
+    train_loader, val_loader, test_loader = get_binary_cifar10_loaders_bird_plane(config.n, batch_size_train=config.batchsize_train, batch_size=128, seed=config.seed)
 
   if config.loss_type == 'ce':
     criterion = nn.CrossEntropyLoss(reduction="none")
