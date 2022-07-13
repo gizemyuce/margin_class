@@ -107,6 +107,37 @@ class AverageMarginlLoss(nn.Module):
 
         return -margin_scores
 
+class AverageMarginlLoss_sum(nn.Module):
+    """
+
+    """
+
+    def __init__(self, type: str):
+        super().__init__()
+        self.type = type
+
+    def forward(self, logits, target):
+        margin_scores = logits.shape[1] * logits[range(target.shape[0]), target] - torch.sum(logits, dim=1)
+
+        return -margin_scores
+
+class AverageMarginlLoss_max(nn.Module):
+    """
+
+    """
+
+    def __init__(self, type: str):
+        super().__init__()
+        self.type = type
+
+    def forward(self, logits, target):
+        tmp_logits = logits.clone()
+        tmp_logits[range(target.shape[0]),target] = float("-Inf") 
+
+        margin_scores = logits[range(target.shape[0]), target] - torch.max(tmp_logits, dim=1).values
+
+        return -margin_scores
+
 class MCPolynomialLoss_max(nn.Module):
     """
     Poly-tailed margin based losses that decay as v^{-\alpha} for \alpha > 0.

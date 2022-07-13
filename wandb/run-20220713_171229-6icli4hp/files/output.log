@@ -1,0 +1,37 @@
+
+Epoch: 0 Loss: 2.5210 Train_Acc: 0.0820 Val_Accuracy: 0.2632
+Epoch: 1 Loss: 1.9413 Train_Acc: 0.3125 Val_Accuracy: 0.3668
+Epoch: 2 Loss: 1.5936 Train_Acc: 0.4727 Val_Accuracy: 0.5202
+Epoch: 3 Loss: 1.0789 Train_Acc: 0.6406 Val_Accuracy: 0.6594
+Epoch: 4 Loss: 0.6369 Train_Acc: 0.8516 Val_Accuracy: 0.6861
+Epoch: 5 Loss: 0.4483 Train_Acc: 0.8711 Val_Accuracy: 0.7007
+Epoch: 6 Loss: 0.2644 Train_Acc: 0.9375 Val_Accuracy: 0.7047
+Epoch: 7 Loss: 0.1480 Train_Acc: 0.9883 Val_Accuracy: 0.7188
+Epoch: 8 Loss: 0.0829 Train_Acc: 1.0000 Val_Accuracy: 0.7274
+Epoch: 9 Loss: 0.0459 Train_Acc: 1.0000 Val_Accuracy: 0.7325
+Epoch: 10 Loss: 0.0293 Train_Acc: 1.0000 Val_Accuracy: 0.7351
+Epoch: 11 Loss: 0.0192 Train_Acc: 1.0000 Val_Accuracy: 0.7376
+Epoch: 12 Loss: 0.0120 Train_Acc: 1.0000 Val_Accuracy: 0.7375
+Epoch: 13 Loss: 0.0076 Train_Acc: 1.0000 Val_Accuracy: 0.7384
+Epoch: 14 Loss: 0.0053 Train_Acc: 1.0000 Val_Accuracy: 0.7397
+Epoch: 15 Loss: 0.0039 Train_Acc: 1.0000 Val_Accuracy: 0.7422
+Epoch: 16 Loss: 0.0030 Train_Acc: 1.0000 Val_Accuracy: 0.7415
+Epoch: 17 Loss: 0.0024 Train_Acc: 1.0000 Val_Accuracy: 0.7408
+Epoch: 18 Loss: 0.0019 Train_Acc: 1.0000 Val_Accuracy: 0.7409
+Epoch: 19 Loss: 0.0015 Train_Acc: 1.0000 Val_Accuracy: 0.7413
+Traceback (most recent call last):
+  File "c:\Users\gizem\Documents\GitHub\margin_class\train_multiclass.py", line 230, in <module>
+    main()
+  File "c:\Users\gizem\Documents\GitHub\margin_class\train_multiclass.py", line 196, in main
+    outputs = model(images)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "c:\Users\gizem\Documents\GitHub\margin_class\src\architectures\Resnet.py", line 22, in forward
+    x = self.relu(self.bn1(self.conv1(x)))
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\batchnorm.py", line 168, in forward
+    return F.batch_norm(
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\functional.py", line 2421, in batch_norm
+    return torch.batch_norm(
+KeyboardInterrupt

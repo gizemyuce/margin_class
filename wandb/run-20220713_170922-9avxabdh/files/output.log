@@ -1,0 +1,33 @@
+
+Epoch: 0 Loss: 2.5210 Train_Acc: 0.0820 Val_Accuracy: 0.2632
+Epoch: 1 Loss: 1.9413 Train_Acc: 0.3125 Val_Accuracy: 0.3668
+Epoch: 2 Loss: 1.5936 Train_Acc: 0.4727 Val_Accuracy: 0.5202
+Epoch: 3 Loss: 1.0789 Train_Acc: 0.6406 Val_Accuracy: 0.6594
+Epoch: 4 Loss: 0.6369 Train_Acc: 0.8516 Val_Accuracy: 0.6861
+Epoch: 5 Loss: 0.4483 Train_Acc: 0.8711 Val_Accuracy: 0.7007
+Epoch: 6 Loss: 0.2644 Train_Acc: 0.9375 Val_Accuracy: 0.7047
+Epoch: 7 Loss: 0.1480 Train_Acc: 0.9883 Val_Accuracy: 0.7188
+Traceback (most recent call last):
+  File "c:\Users\gizem\Documents\GitHub\margin_class\train_multiclass.py", line 230, in <module>
+    main()
+  File "c:\Users\gizem\Documents\GitHub\margin_class\train_multiclass.py", line 190, in main
+    for images, labels in loader:
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torchvision\datasets\mnist.py", line 145, in __getitem__
+    img = self.transform(img)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torchvision\transforms\transforms.py", line 95, in __call__
+    img = t(img)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torchvision\transforms\transforms.py", line 270, in forward
+    return F.normalize(tensor, self.mean, self.std, self.inplace)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torchvision\transforms\functional.py", line 360, in normalize
+    mean = mean.view(-1, 1, 1)
+KeyboardInterrupt
