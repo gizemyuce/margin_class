@@ -1,0 +1,32 @@
+
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Epoch: 0 Loss: 0.2642 Train_Acc: 0.7742 Val_Accuracy: 0.8414
+Epoch: 1 Loss: 0.3826 Train_Acc: 0.8571 Val_Accuracy: 0.8509
+Epoch: 2 Loss: 0.2345 Train_Acc: 0.8725 Val_Accuracy: 0.8734
+Epoch: 3 Loss: 0.3165 Train_Acc: 0.9065 Val_Accuracy: 0.8714
+Traceback (most recent call last):
+  File "c:\Users\gizem\Documents\GitHub\margin_class\train_binary.py", line 235, in <module>
+    main()
+  File "c:\Users\gizem\Documents\GitHub\margin_class\train_binary.py", line 135, in main
+    for i, (images, labels) in enumerate(train_loader):
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\torchvision\datasets\cifar.py", line 115, in __getitem__
+    img = Image.fromarray(img)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\PIL\Image.py", line 2949, in fromarray
+    return frombuffer(mode, size, obj, "raw", rawmode, 0, 1)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\PIL\Image.py", line 2876, in frombuffer
+    return frombytes(mode, size, data, decoder_name, args)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\PIL\Image.py", line 2821, in frombytes
+    im = new(mode, size)
+  File "C:\Users\gizem\anaconda3\envs\soccer2\lib\site-packages\PIL\Image.py", line 2785, in new
+    return im._new(core.fill(mode, size, color))
+KeyboardInterrupt
