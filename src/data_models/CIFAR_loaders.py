@@ -121,6 +121,9 @@ def extract_classes_from_dataset(dataset, class_1, class_2):
 
 def train_val_split(train_dataset, val_dataset, n_train, n_val):
 
+  if n_val > len(train_dataset) - n_train:
+      n_val = len(train_dataset) - n_train
+
   index_sub = np.random.choice(np.arange(len(train_dataset)), int(n_train+n_val), replace=False)
   ind_train = index_sub[:n_train]
   ind_val = index_sub[n_train:-1]
