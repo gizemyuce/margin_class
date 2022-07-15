@@ -46,23 +46,23 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
 hyperparameter_defaults = dict(
-    learning_rate = 0.025,
+    learning_rate = 0.099,
     epochs = 1000,
-    n=256,
-    loss_type='avg-max',
+    n=58000,
+    loss_type='ce',
     dataset = 'FMNIST',
     architecture = 'ResNet',
     seed = 0,
-    momentum=0.9,
+    momentum=0.069,
     weight_decay=0,
-    test=False,
+    test=True,
     left_loss='linear',
     avg_mrgn_loss_type = '-',
     alpha=1.05,
     beta=0,
-    scheduler_step=300,
-    scheduler_gamma = 0.9,
-    batchsize_train = None,
+    scheduler_step=500,
+    scheduler_gamma = 0.1,
+    batchsize_train = 128,
     )
 
 
