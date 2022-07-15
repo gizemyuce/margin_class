@@ -46,22 +46,22 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
 hyperparameter_defaults = dict(
-    learning_rate = 0.006132,
+    learning_rate = 0.07343,
     epochs = 1000,
     n=50000,
     loss_type='avg-max',
     dataset = 'FMNIST',
     architecture = 'ResNet',
     seed = 0,
-    momentum=0.212,
+    momentum=0.773,
     weight_decay=0,
     test=True,
     left_loss='linear',
     avg_mrgn_loss_type = '-',
     alpha=1.05,
     beta=0,
-    scheduler_step=200,
-    scheduler_gamma = 0.05,
+    scheduler_step=500,
+    scheduler_gamma = 0.9,
     batchsize_train = 128,
     )
 
@@ -93,10 +93,10 @@ def main():
         
 
   if config.dataset == 'FMNIST':
-    train_loader, val_loader, test_loader = get_fmnist_loaders_3channels(config.n, batch_size_train=None, batch_size=128, seed=config.seed)
+    train_loader, val_loader, test_loader = get_fmnist_loaders_3channels(config.n, batch_size_train=config.batchsize_train, batch_size=128, seed=config.seed)
   elif config.dataset == 'CIFAR10':
     #### TODO 
-    train_loader, val_loader, test_loader = get_fmnist_loaders_3channels(config.n, batch_size_train=None, batch_size=128, seed=config.seed)
+    train_loader, val_loader, test_loader = get_fmnist_loaders_3channels(config.n, batch_size_train=config.batchsize_train, batch_size=128, seed=config.seed)
 
   if config.loss_type == 'ce':
     criterion = nn.CrossEntropyLoss(reduction="none")
