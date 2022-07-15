@@ -44,6 +44,9 @@ def get_fmnist_loaders_3channels(n_train, n_val=10000, batch_size_train=None, ba
                               transform=transform,
                               )
 
+  if n_val > len(train_dataset) - n_train:
+      n_val = len(train_dataset) - n_train                  
+
   # subset training set
   index_sub = np.random.choice(np.arange(len(train_dataset)), int(n_train+n_val), replace=False)
   ind_train = index_sub[:n_train]
