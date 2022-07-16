@@ -1,0 +1,24 @@
+{
+    "os": "Windows-10-10.0.25145-SP0",
+    "python": "3.10.4",
+    "heartbeatAt": "2022-07-16T17:18:42.395121",
+    "startedAt": "2022-07-16T17:18:34.332601",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1650 with Max-Q Design",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "c:\\Users\\gizem\\Documents\\GitHub\\margin_class\\train_multiclass.py",
+    "codePath": "train_multiclass.py",
+    "git": {
+        "remote": "https://github.com/gizemyuce/margin_class.git",
+        "commit": "cfa07686fb0ba1830959d7fe1e274944dd86cc63"
+    },
+    "email": "gizemyucee@gmail.com",
+    "root": "C:/Users/gizem/Documents/GitHub/margin_class",
+    "host": "MSI",
+    "username": "gizem",
+    "executable": "C:\\Users\\gizem\\anaconda3\\envs\\soccer2\\python.exe"
+}
