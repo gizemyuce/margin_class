@@ -35,7 +35,7 @@ import os
 import numpy as np
 
 from src.data_models.FMnist_loaders import get_binary_fmnist_loaders_01, get_binary_fmnist_loaders_24, get_binary_fmnist_loaders_24_3channels
-from src.data_models.CIFAR_loaders import get_binary_cifar10_loaders_bird_plane, get_binary_cifar10_loaders_cat_dog_3channels
+from src.data_models.CIFAR_loaders import get_binary_cifar10_loaders_bird_plane, get_binary_cifar10_loaders_cat_dog_3channels, get_cifar10_loaders
 from src.data_models.FMnist_loaders import get_fmnist_loaders_3channels
 from src.utils.loss_functions import *
 from src.architectures.CNN import CNNModel
@@ -46,11 +46,11 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
 hyperparameter_defaults = dict(
-    learning_rate = 1e-5,
+    learning_rate = 1e-3,
     epochs = 1000,
-    n=50000,
-    loss_type='avg-max',
-    dataset = 'FMNIST',
+    n=1048,
+    loss_type='ce',
+    dataset = 'cifar10',
     architecture = 'ResNet',
     seed = 0,
     momentum=0.773,
@@ -62,7 +62,7 @@ hyperparameter_defaults = dict(
     beta=0,
     scheduler_step=100,
     scheduler_gamma = 0.1,
-    batchsize_train = 128,
+    batchsize_train = None,
     )
 
 
@@ -95,8 +95,7 @@ def main():
   if config.dataset == 'FMNIST':
     train_loader, val_loader, test_loader = get_fmnist_loaders_3channels(config.n, batch_size_train=config.batchsize_train, batch_size=128, seed=config.seed)
   elif config.dataset == 'CIFAR10':
-    #### TODO 
-    train_loader, val_loader, test_loader = get_fmnist_loaders_3channels(config.n, batch_size_train=config.batchsize_train, batch_size=128, seed=config.seed)
+    train_loader, val_loader, test_loader = get_cifar10_loaders(config.n, batch_size_train=config.batchsize_train, batch_size=128, seed=config.seed)
 
   if config.loss_type == 'ce':
     criterion = nn.CrossEntropyLoss(reduction="none")
