@@ -62,7 +62,7 @@ hyperparameter_defaults = dict(
     beta=0,
     scheduler_step=100,
     scheduler_gamma = 0.1,
-    batchsize_train = None,
+    batchsize_train = 128,
     )
 
 
