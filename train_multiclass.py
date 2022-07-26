@@ -46,10 +46,10 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
 hyperparameter_defaults = dict(
-    learning_rate = 1e-3,
+    learning_rate = 1e-6,
     epochs = 1000,
     n=60000,
-    loss_type='ce',
+    loss_type='avg-max',
     dataset = 'CIFAR10',
     architecture = 'ResNet',
     seed = 0,
