@@ -46,10 +46,10 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
 hyperparameter_defaults = dict(
-    learning_rate = 0.006132,
+    learning_rate = 1e-5,
     epochs = 1000,
-    n=50000,
-    loss_type='avg-max',
+    n=256,
+    loss_type='avg-max-hinge',
     dataset = 'FMNIST',
     architecture = 'ResNet',
     seed = 0,
@@ -60,9 +60,9 @@ hyperparameter_defaults = dict(
     avg_mrgn_loss_type = '-',
     alpha=1.05,
     beta=0,
-    scheduler_step=200,
-    scheduler_gamma = 0.05,
-    batchsize_train = 128,
+    scheduler_step=100,
+    scheduler_gamma = 0.1,
+    batchsize_train = None,
     )
 
 
@@ -109,6 +109,11 @@ def main():
     criterion = AverageMarginlLoss_sum(type = config.avg_mrgn_loss_type)
   elif config.loss_type == 'avg-max':
     criterion = AverageMarginlLoss_max(type = config.avg_mrgn_loss_type)
+  elif config.loss_type == 'multimargin':
+    criterion = nn.MultiMarginLoss()
+  elif config.loss_type == 'avg-max-hinge':
+    criterion = AverageMarginlLoss_max_hinge()
+
 
   if config.architecture == 'CNN':
     model = CNNModel()
