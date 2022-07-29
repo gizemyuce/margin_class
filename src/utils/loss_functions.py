@@ -143,9 +143,10 @@ class AverageMarginlLoss_max_hinge(nn.Module):
 
     """
 
-    def __init__(self, type: str):
+    def __init__(self, margin_treshold=1.0):
         super().__init__()
         self.type = type
+        self.margin_treshold = margin_treshold
 
     def forward(self, logits, target):
         tmp_logits = logits.clone()
@@ -153,7 +154,7 @@ class AverageMarginlLoss_max_hinge(nn.Module):
 
         margin_scores = logits[range(target.shape[0]), target] - torch.max(tmp_logits, dim=1).values
 
-        return torch.max(torch.zeros_like(margin_scores), 1-margin_scores)
+        return torch.max(torch.zeros_like(margin_scores), self.margin_treshold-margin_scores)
 
 class MCPolynomialLoss_max(nn.Module):
     """
