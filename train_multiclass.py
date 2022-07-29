@@ -46,7 +46,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
 hyperparameter_defaults = dict(
-    learning_rate = 1e-5,
+    learning_rate = 1e-3,
     epochs = 1000,
     n=256,
     loss_type='avg-max-hinge',
