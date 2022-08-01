@@ -4,7 +4,7 @@ import torchvision.models as models
 
 class ResNet_50_Multi(nn.Module):
     def __init__(self, pretrained = False, num_classes=10):
-        super(ResNetMulti, self).__init__()
+        super(ResNet_50_Multi, self).__init__()
         model_resnet = models.resnet50(pretrained=pretrained)
         self.conv1 = model_resnet.conv1
         self.bn1 = model_resnet.bn1
