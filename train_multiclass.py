@@ -40,7 +40,7 @@ from src.data_models.FMnist_loaders import get_fmnist_loaders_3channels
 from src.utils.loss_functions import *
 from src.architectures.CNN import CNNModel
 from src.architectures.Convnet import ConvNet
-from src.architectures.Resnet import ResNetMulti
+from src.architectures.Resnet import ResNetMulti, ResNet_50_Multi
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -51,7 +51,7 @@ hyperparameter_defaults = dict(
     n=256,
     loss_type='avg-max',
     dataset = 'FMNIST',
-    architecture = 'ResNet',
+    architecture = 'ResNet50',
     seed = 0,
     momentum=0.212,
     weight_decay=0,
@@ -121,6 +121,9 @@ def main():
     model = ConvNet()
   elif config.architecture == 'ResNet':
     model = ResNetMulti()
+  elif config.architecture == 'ResNet50':
+    model = ResNet_50_Multi()
+
     
   model = model.to(device) 
 
