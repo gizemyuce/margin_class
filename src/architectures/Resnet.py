@@ -15,7 +15,7 @@ class ResNet_50_Multi(nn.Module):
         self.layer3 = model_resnet.layer3
         self.layer4 = model_resnet.layer4
         self.avgpool = model_resnet.avgpool
-        self.fc = nn.Linear(512, num_classes)
+        self.fc = nn.Linear(2048, num_classes)
 
     def forward(self, x):
         x = self.relu(self.bn1(self.conv1(x)))
