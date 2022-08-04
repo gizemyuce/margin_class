@@ -146,6 +146,9 @@ def main():
         images=images.to(device)
         labels=labels.to(device)
 
+        if epoch==0 and i == 0:
+          print(labels)
+
         # if torch.cuda.is_available():
         #   imgs = imgs.cuda()
         #   labels = labels.cuda()
