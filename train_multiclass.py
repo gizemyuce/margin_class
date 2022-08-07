@@ -49,7 +49,7 @@ hyperparameter_defaults = dict(
     learning_rate = 1e-2,
     epochs = 1000,
     n=256,
-    loss_type='avg-max',
+    loss_type='combo',
     dataset = 'FMNIST',
     architecture = 'ResNet50',
     seed = 0,
@@ -63,6 +63,7 @@ hyperparameter_defaults = dict(
     scheduler_step=100,
     scheduler_gamma = 0.1,
     batchsize_train = None,
+    combo_avg=0.5
     )
 
 
@@ -113,6 +114,9 @@ def main():
     criterion = nn.MultiMarginLoss()
   elif config.loss_type == 'avg-max-hinge':
     criterion = AverageMarginlLoss_max_hinge()
+  elif config.loss_type == 'combo':
+    criterion_1 = AverageMarginlLoss_max_hinge()
+    criterion_2 = nn.CrossEntropyLoss(reduction="none")
 
 
   if config.architecture == 'CNN':
@@ -160,7 +164,10 @@ def main():
         outputs = model(images)
 
         # Calculate Loss: softmax --> cross entropy loss
-        loss = torch.mean(criterion(outputs, labels))
+        if config.loss_type=='combo':
+          loss = torch.mean(config.combo_avg*criterion_1(outputs, labels)+(1-config.combo_avg)*criterion_2(outputs, labels))
+        else:
+          loss = torch.mean(criterion(outputs, labels))
 
         # Getting gradients w.r.t. parameters
         loss.backward()
