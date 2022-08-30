@@ -46,24 +46,26 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
 hyperparameter_defaults = dict(
-    learning_rate = 1e-2,
+    learning_rate = 0.07343,
     epochs = 1000,
     n=256,
-    loss_type='combo',
+    loss_type='ce',
     dataset = 'FMNIST',
-    architecture = 'ResNet50',
+    architecture = 'ResNet',
     seed = 0,
-    momentum=0.212,
+    momentum=0.7733,
     weight_decay=0,
     test=True,
     left_loss='linear',
     avg_mrgn_loss_type = '-',
-    alpha=1.05,
-    beta=0,
-    scheduler_step=100,
-    scheduler_gamma = 0.1,
+    alpha=1.0,
+    beta=1.0,
+    scheduler_step=500,
+    scheduler_gamma = 0.9,
     batchsize_train = None,
-    combo_avg=0.5
+    combo_avg=0.5, 
+    pretrained =True,
+    train_only_linear = False,
     )
 
 
@@ -124,11 +126,20 @@ def main():
   elif config.architecture == 'Convnet':
     model = ConvNet()
   elif config.architecture == 'ResNet':
-    model = ResNetMulti()
+    model = ResNetMulti(pretrained=config.pretrained)
   elif config.architecture == 'ResNet50':
     model = ResNet_50_Multi()
 
+  model = torch.load("resnet18_ce_256.pb")
+
     
+  if config.train_only_linear:
+    frozen_layers = [model.conv1, model.bn1, model.relu, model.maxpool, model.layer1,model.layer2,model.layer3,model.layer4, model.avgpool ]
+    for layer in frozen_layers:
+      #layer.trainable = False
+      for param in layer.parameters():
+        param.requires_grad = False
+
   model = model.to(device) 
 
   # wandb.watch(model)
@@ -190,6 +201,11 @@ def main():
     train_accuracy = sum(train_acc)/config.n
     margin_ratio = sum(margin_sum)/config.n
 
+    conf_train = wandb.plot.confusion_matrix(probs=None,
+                        y_true = labels.cpu().detach().numpy(), preds=torch.argmax(outputs, dim=1).cpu().detach().numpy(),
+                        class_names=label_names)
+
+
     # Calculate Val Accuracy
     # model.eval()
 
@@ -233,10 +249,18 @@ def main():
     if config.loss_type == 'poly':
       metrics['margin_ratio'] = margin_ratio
 
+    metrics["conf_mat_train"] = conf_train
+
+    metrics["conf_mat_test"] = wandb.plot.confusion_matrix(probs=None,
+                        y_true = labels.cpu().detach().numpy(), preds=predicted.cpu().detach().numpy(),
+                        class_names=label_names)
+
     wandb.log(metrics)
 
     # Print Loss
     print('Epoch: {0} Loss: {1:.4f} Train_Acc:{3: .4f} Val_Accuracy: {2:.4f}'.format(epoch, loss, accuracy, train_accuracy))
+
+    torch.save(model, "resnet18_ce_256.pb")
 
 
   #torch.save(model.state_dict(), os.path.join(wandb.run.dir, "model.pt"))
