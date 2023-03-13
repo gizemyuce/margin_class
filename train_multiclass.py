@@ -112,6 +112,8 @@ def main():
     criterion = AverageMarginlLoss_sum(type = config.avg_mrgn_loss_type)
   elif config.loss_type == 'avg-max':
     criterion = AverageMarginlLoss_max(type = config.avg_mrgn_loss_type)
+  elif config.loss_type == 'avg-max-zero':
+    criterion = AverageMarginlLoss_max_zero(type = config.avg_mrgn_loss_type)
   elif config.loss_type == 'multimargin':
     criterion = nn.MultiMarginLoss()
   elif config.loss_type == 'avg-max-hinge':

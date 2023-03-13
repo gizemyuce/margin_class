@@ -138,6 +138,22 @@ class AverageMarginlLoss_max(nn.Module):
 
         return -margin_scores
 
+class AverageMarginlLoss_max_zero(nn.Module):
+    """
+
+    """
+
+    def __init__(self, type: str):
+        super().__init__()
+        self.type = type
+
+    def forward(self, logits, target):
+        tmp_logits = logits.clone()
+
+        margin_scores = logits[range(target.shape[0]), target] - torch.max(tmp_logits, dim=1).values
+
+        return -margin_scores
+
 class AverageMarginlLoss_max_hinge(nn.Module):
     """
 
