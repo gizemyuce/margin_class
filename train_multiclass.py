@@ -49,7 +49,7 @@ hyperparameter_defaults = dict(
     learning_rate = 0.07343,
     epochs = 1000,
     n=256,
-    loss_type='ce',
+    loss_type='avg-max',
     dataset = 'FMNIST',
     architecture = 'ResNet',
     seed = 0,
@@ -148,6 +148,46 @@ def main():
   optimizer = torch.optim.SGD(model.parameters(), lr=config.learning_rate, momentum=config.momentum, weight_decay=config.weight_decay)
   scheduler = StepLR(optimizer, step_size=config.scheduler_step, gamma=config.scheduler_gamma)
   
+#Checking initial accuracy
+  # Calculate Val Accuracy
+  # model.eval()
+
+  correct = 0.0
+  correct_arr = [0.0] * 10
+  total = 0.0
+  total_arr = [0.0] * 10
+  print(config.test)
+  if config.test:
+    loader=test_loader
+  else:
+    loader=val_loader
+
+  # Iterate through test dataset
+  for images, labels in loader:
+      images = Variable(images)
+      images= images.to(device)
+      labels = Variable(labels).to(device)
+
+      # Forward pass only to get logits/output
+      outputs = model(images)
+
+      # Get predictions from the maximum value
+      _, predicted = torch.max(outputs.data, 1)
+
+      # Total number of labels
+      total += labels.size(0)
+      correct += (predicted == labels).sum()
+
+      for label in range(10):
+          correct_arr[label] += (((predicted == labels) & (labels==label)).sum())
+          total_arr[label] += (labels == label).sum()
+
+  accuracy = correct / total
+  print("Initial accuracy")
+  print(accuracy)
+
+
+
   iter=0
   for epoch in range(config['epochs']):
     train_acc=[]
@@ -162,8 +202,8 @@ def main():
         images=images.to(device)
         labels=labels.to(device)
 
-        if epoch==0 and i == 0:
-          print(labels)
+        # if epoch==0 and i == 0:
+        #   print(labels)
 
         # if torch.cuda.is_available():
         #   imgs = imgs.cuda()
