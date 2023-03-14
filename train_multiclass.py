@@ -64,7 +64,7 @@ hyperparameter_defaults = dict(
     scheduler_gamma = 0.9,
     batchsize_train = None,
     combo_avg=0.5, 
-    pretrained =True,
+    pretrained =False,
     train_only_linear = False,
     )
 
